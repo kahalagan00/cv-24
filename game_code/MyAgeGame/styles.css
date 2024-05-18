@@ -1,0 +1,40 @@
+/*
+  Author: Joshmar Morales
+  Last updated: April 26, 2024
+*/
+
+body {
+  background-color: white;
+}
+
+.guess {
+  padding: 0;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, 0.15);
+  background-color: white;
+  font-size: 16px;
+}
+
+.message {
+  color: navy;
+  font-weight: 500;
+}
+
+.attempts {
+  font-size: x-large;
+}
+
+.figure-photo {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
