@@ -1,17 +1,17 @@
-.carousel-caption{
-    background-color: #25262E;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 25px;
+.carousel-caption {
+  background-color: #25262e;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 25px;
 }
 
 .about-us {
-    background-color: #25262E;
-    color: white;
+  background-color: #25262e;
+  color: white;
 }
 
 .carousel {
-    width: 60%;
-    max-width: none;
-    margin: auto;
+  width: 60%;
+  max-width: none;
+  margin: auto;
 }
