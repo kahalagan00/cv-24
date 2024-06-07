@@ -1,67 +1,66 @@
 body {
-    text-align: center;
-    background-color: #25262E;;
+  text-align: center;
+  background-color: #25262e;
 }
 
 #level-title {
-    font-family: "Lucida" Grande, sans-serif;
-    font-size: 5rem;
-    margin:  5%;
-    color: #FEF2BF;
+  font-family: "Lucida" Grande, sans-serif;
+  font-size: 5rem;
+  margin: 5%;
+  color: #fef2bf;
 }
 
 .container {
-    display: block;
-    width: 50%;
-    margin: auto;
-
+  display: block;
+  width: 50%;
+  margin: auto;
 }
 
 .btn {
-    margin: 25px;
-    display: inline-block;
-    height: 250px;
-    width: 250px;
-    border: 10px solid black;
-    border-radius: 20%;
+  margin: 25px;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border: 10px solid black;
+  border-radius: 20%;
 }
 
 .game-over {
-    background-color: red;
-    opacity: 0.8;
+  background-color: red;
+  opacity: 0.8;
 }
 
 .red {
-    background-color: #25262E;
+  background-color: #25262e;
 }
 
 .green {
-    background-color: #25262E;
+  background-color: #25262e;
 }
 
 .blue {
-    background-color: #25262E;
+  background-color: #25262e;
 }
 
 .yellow {
-    background-color: #25262E;
+  background-color: #25262e;
 }
 
 .pressed {
-    box-shadow: 0 0 20px white;
-    background-color: grey;
+  box-shadow: 0 0 20px white;
+  background-color: grey;
 }
 
 .img-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .img-container img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
 }
