@@ -15,3 +15,32 @@
   max-width: none;
   margin: auto;
 }
+
+.jmar-pfp {
+  border-radius: 100%;
+  width: 500px;
+  height: auto;
+}
+
+.carousel-photo {
+  border-radius: 25px;
+}
+
+.img-continer {
+  width: 100%;
+  height: auto;
+}
+
+.ending-footer {
+  background-color: #25262e;
+  color: white;
+}
+
+.ending-footer-interests {
+  background-color: #25262e;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
