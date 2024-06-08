@@ -36,11 +36,7 @@
   color: white;
 }
 
-.ending-footer-interests {
-  background-color: #25262e;
-  color: white;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.interests-photo {
+  width: 500px;
+  height: auto;
 }
