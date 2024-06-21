@@ -5,7 +5,22 @@
   border-radius: 25px;
 }
 
-.about-us {
+#about-listing {
+  background-color: #25262e;
+  color: white;
+}
+
+#projects-listing {
+  background-color: white;
+  color: black;
+}
+
+#contact-listing {
+  background-color: #dfe0e5;
+  color: #25262e;
+}
+
+#ending-footer {
   background-color: #25262e;
   color: white;
 }
@@ -22,21 +37,8 @@
   height: auto;
 }
 
-.carousel-photo {
-  border-radius: 25px;
-}
-
-.img-continer {
-  width: 100%;
-  height: auto;
-}
-
-.ending-footer {
-  background-color: #25262e;
-  color: white;
-}
-
 .interests-photo {
-  width: 500px;
+  width: 300px;
   height: auto;
+  /* border-radius: 10%; */
 }
