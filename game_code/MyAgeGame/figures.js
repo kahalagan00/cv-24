@@ -1,6 +1,8 @@
-/*
-    Last updated: May 17, 2024
-*/
+/**
+ * Last updated: June 20, 2024
+ * All the names and descriptions of the corresponding three
+ * figures for each century
+ */
 
 // 0 - 100 Historical Figures
 const peopleInCentury1 = [
