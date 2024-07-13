@@ -9,6 +9,7 @@ const titleToType = document.getElementById("demo-typer");
 let i = 0;
 let reverse = false;
 let speed = 50;
+let repeat = false;
 
 const typeWriter = function () {
   if (i < DEVELOPER_INTRO.length) {
