@@ -1,8 +1,21 @@
-.carousel-caption {
-  background-color: #25262e;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 25px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* What does this do? */
+}
+
+html {
+  box-sizing: border-box; /* What does this do? */
+}
+
+.full-height {
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .full-height {
+    height: auto; /* Removes 100vh on smaller screen sizes */
+  }
 }
 
 #about-listing {
@@ -12,7 +25,7 @@
 
 #projects-listing {
   background-color: white;
-  color: black;
+  color: #25262e;
 }
 
 #contact-listing {
@@ -23,12 +36,10 @@
 #ending-footer {
   background-color: #25262e;
   color: white;
-}
-
-.carousel {
-  width: 60%;
-  max-width: none;
-  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .jmar-pfp {
@@ -39,6 +50,17 @@
 
 .interests-photo {
   width: 300px;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
   /* border-radius: 10%; */
+}
+
+.project-img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.box-icons {
+  color: #25262e;
 }
