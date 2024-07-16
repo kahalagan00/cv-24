@@ -25,7 +25,7 @@ html {
 
 #projects-listing {
   background-color: white;
-  color: black;
+  color: #25262e;
 }
 
 #contact-listing {
@@ -59,4 +59,8 @@ html {
   width: 300px;
   height: 250px;
   object-fit: cover;
+}
+
+.box-icons {
+  color: #25262e;
 }
