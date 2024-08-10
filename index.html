@@ -30,6 +30,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
+
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <section class="menu-bar section">
@@ -286,8 +288,8 @@
       <div class="container-fluid py-5">
         <div class="row mx-2 pb-3 text-center">
           <div class="col-12 col-lg-6">
-            <h1 class="display-3" id="demo-typer"></h1>
-            <h3 class="fw-light">
+            <h1 class="display-3" id="dev-intro">Hello! I'm Joshmar</h1>
+            <h3 class="fw-light" id="dev-description">
               <span class="d-block d-xl-inline">💻 Software Engineer</span>
               <span class="d-block d-xl-inline">🌎 Web Developer</span>
             </h3>
@@ -304,7 +306,7 @@
               loading="lazy"
             />
           </div>
-          <div class="col-12 col-lg-6 pb-5">
+          <div class="col-12 col-lg-6 pb-5" id="dev-experience">
             <div class="row mx-2 pb-3">
               <h2 class="fw-light">🏢 Experience</h2>
               <h4>Software Engineer</h4>
@@ -336,8 +338,8 @@
 
     <section class="section sectionBody" id="projects-listing" class="py-5">
       <div class="container-fluid full-height">
-        <div class="row py-5 text-center">
-          <h1 class="display-3">Projects</h1>
+        <div class="row py-5 text-center projects-title-container">
+          <h1 class="display-3 projects-title">Projects</h1>
         </div>
 
         <div class="row pb-5 text-center g-5">
@@ -551,64 +553,76 @@
 
     <section class="section sectionBody" id="interests-listing" class="py-5">
       <div class="container-fluid full-height">
-        <div class="row pt-3 pb-5 text-center">
-          <h1 class="display-3">Interests</h1>
+        <div class="row pt-3 pb-5 text-center interests-title-container">
+          <h1 class="display-3 interests-title">Interests</h1>
         </div>
 
         <div class="row pb-4 g-5 text-center">
           <div class="col-12 col-lg-4">
             <h4>Calisthenics</h4>
-            <img
-              class="py-3 interests-photo img-fluid"
-              src="./assets/images/calisthenicsOrig/1_edit_compressed.jpg"
-              alt="calisthenics-image"
-              loading="lazy"
-            />
-            <p class="lead">Workout anywhere!</p>
+            <div class="interests-img-container">
+              <img
+                class="py-3 interests-photo img-fluid"
+                src="./assets/images/calisthenicsOrig/1_edit_compressed.jpg"
+                alt="calisthenics-image"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- <p class="lead">Workout anywhere!</p> -->
           </div>
 
           <div class="col-12 col-lg-4">
             <h4>PC Building/Gaming</h4>
-            <img
-              class="py-3 interests-photo img-fluid"
-              src="./assets/images/pcOrig/0_edit_compressed.JPG"
-              alt="calisthenics-image"
-              loading="lazy"
-            />
-            <p class="lead">Latest tech!</p>
+            <div class="interests-img-container">
+              <img
+                class="py-3 interests-photo img-fluid"
+                src="./assets/images/pcOrig/0_edit_compressed.JPG"
+                alt="calisthenics-image"
+                loading="lazy"
+              />
+            </div>
+            <!-- <p class="lead">Latest tech!</p> -->
           </div>
 
           <div class="col-12 col-lg-4">
             <h4>Video Games</h4>
-            <img
-              class="py-3 interests-photo img-fluid"
-              src="./assets/images/gamesOrig/0_edited_compressed.JPG"
-              alt="calisthenics-image"
-              loading="lazy"
-            />
-            <p class="lead">Stealth and Yakuza fan!</p>
+            <div class="interests-img-container">
+              <img
+                class="py-3 interests-photo img-fluid"
+                src="./assets/images/gamesOrig/0_edited_compressed.JPG"
+                alt="calisthenics-image"
+                loading="lazy"
+              />
+            </div>
+            <!-- <p class="lead">Stealth and Yakuza fan!</p> -->
           </div>
         </div>
         <div class="row pb-4 g-5 text-center">
           <div class="col-12 col-lg-4">
             <h4>Language Learning</h4>
-            <img
-              class="py-3 interests-photo img-fluid"
-              src="./assets/images/languageOrig/0_edit_compressed.JPG"
-              alt="calisthenics-image"
-              loading="lazy"
-            />
-            <p class="lead">Currently on Español!</p>
+            <div class="interests-img-container">
+              <img
+                class="py-3 interests-photo img-fluid"
+                src="./assets/images/languageOrig/0_edit_compressed.JPG"
+                alt="calisthenics-image"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- <p class="lead">Currently on Español!</p> -->
           </div>
           <div class="col-12 col-lg-4">
             <h4>Music</h4>
-            <img
-              class="py-3 interests-photo img-fluid"
-              src="./assets/images/musicOrig/0_edited_compressed.JPG"
-              alt="calisthenics-image"
-              loading="lazy"
-            />
-            <p class="lead">EDM, Dubstep, and Drill!</p>
+            <div class="interests-img-container">
+              <img
+                class="py-3 interests-photo img-fluid"
+                src="./assets/images/musicOrig/0_edited_compressed.JPG"
+                alt="calisthenics-image"
+                loading="lazy"
+              />
+            </div>
+            <!-- <p class="lead">EDM, Dubstep, and Drill!</p> -->
           </div>
         </div>
       </div>
@@ -641,9 +655,8 @@
     <section class="section">
       <div class="container-fluid px-0 mx-0">
         <footer class="fw-light py-5" id="ending-footer">
-          &copy;
           <span class="footer-date"></span>&nbsp;Copyright by
-          <span class="fw-normal">&nbsp;Joshmar Morales</span>. Used for
+          <span class="fw-normal">&nbsp;Joshmar Morales.</span>&nbsp;Used for
           portfolio showcasing only.
         </footer>
       </div>
@@ -654,7 +667,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./script.js"></script>
   </body>
 </html>
