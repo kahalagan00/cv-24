@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Calculated based on the browser's font, to define 1rem */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box; /* Change the box model so that borders and paddings are no longer added to the total width/height specified for box */
+}

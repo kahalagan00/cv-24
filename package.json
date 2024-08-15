@@ -1,0 +1,16 @@
+{
+  "name": "cv24",
+  "version": "1.0.0",
+  "description": "Libraries for Joshmar's website portfolio.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/styles.css",
+    "compile:sass:watch": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Joshmar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
