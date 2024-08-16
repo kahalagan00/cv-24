@@ -24,13 +24,310 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
 
+    <script
+      defer
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <footer class="" id="ending-footer">
-      <span class="footer-date"></span>&nbsp;Copyright by
-      <span>&nbsp;Joshmar Morales.</span>&nbsp;Used for portfolio showcasing
-      only.
+    <header class="header">
+      <div class="header__logo-box">
+        <div class="header__logo">
+          <img
+            src="./assets/svg/coding.svg"
+            alt="Joshmar coding"
+            class="header__logo-photo"
+          />
+        </div>
+      </div>
+      <div class="header__clock-box">
+        <dotlottie-player
+          src="https://lottie.host/03beccdc-741d-4f75-bae8-dd2acf36157c/sqaP09GLgR.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 200px"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+      <div class="header__text-box">
+        <div class="header__introduction">
+          <h1
+            class="header__introduction-name u-bottom-shadow-text u-margin-bottom-medium"
+          >
+            Hi my name is Joshmar
+          </h1>
+          <p class="header__description">Software Engineer</p>
+          <p class="header__description">Fullstack Developer</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-experience">
+        <div class="experience">
+          <div class="experience__list">
+            <h1 class="heading-primary u-bottom-shadow-text">Experience</h1>
+            <div class="experience__list-item">
+              <h2 class="experience__title">Work</h2>
+            </div>
+            <div class="experience__list-item">
+              <h2 class="experience__title">Technologies</h2>
+            </div>
+            <div class="experience__list-item">
+              <h2 class="experience__title">Education</h2>
+            </div>
+            <div class="experience__list-item">
+              <h2 class="experience__title">Languages</h2>
+            </div>
+          </div>
+          <div class="experience__visual">
+            <h1
+              class="u-hidden heading-primary u-bottom-shadow-text u-margin-bottom-small"
+            >
+              Visual of said experience
+            </h1>
+            <div class="experience__visual-photobox u-margin-bottom-medium">
+              <img
+                src="./assets/svg/experience.svg"
+                alt="General Experience Photo"
+                class="experience__visual-photobox-photo"
+                id="experienceImgEl"
+              />
+            </div>
+            <div class="experience__visual-descriptionbox">
+              <div
+                class="u-hidden experience__visual-descriptionbox-item experience__visual-descriptionbox-work"
+              >
+                <h2 class="heading-secondary">
+                  JCM Global: <em>Software Engineer</em>
+                </h2>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  2023 - 2024
+                </p>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  &rarr; Developed real-time multi-threaded applications and BSP
+                  drivers for a network adapter device.
+                </p>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  &rarr; Built RESTful APIs to deliver field product data to the
+                  web application's back-end server.
+                </p>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  &rarr; Implemented new features that improved EGM gameplay by
+                  10% and expanded networking capabilities.
+                </p>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  &rarr; Resolved critical bugs, reducing downtimes by 10% and
+                  enhanced user experience during casino operations.
+                </p>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  &rarr; Thoroughly documented codebase changes, improving team
+                  productivity and onboarding efficiency.
+                </p>
+                <div class="experience__visual-artbox">
+                  <div class="experience__visual-artbox__item">
+                    <dotlottie-player
+                      src="https://lottie.host/cbefd4d0-7deb-4264-b11e-02d0d89ace3c/gNIZMqiFej.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 150px; height: 150px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <dotlottie-player
+                      src="https://lottie.host/c4438372-abcd-485f-a085-865560f9696b/R2766Yv9KW.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 150px; height: 150px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <dotlottie-player
+                      src="https://lottie.host/fcfd879e-0e87-4446-a430-70192bec0a1f/lZibhA5k2x.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 150px; height: 150px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="u-hidden experience__visual-descriptionbox-item experience__visual-descriptionbox-technologies"
+              >
+                <!-- <h2 class="heading-secondary">Languages</h2>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  JavaScript, C/C++, Python
+                </p> -->
+                <h2 class="heading-secondary">Front-End</h2>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  JavaScript, HTML, CSS, React, Bootstrap, jQuery, SASS,
+                </p>
+                <div class="experience__visual-artbox">
+                  <div class="experience__visual-artbox__item">
+                    <dotlottie-player
+                      src="https://lottie.host/e2f7147d-d617-44a5-8068-5eb6c4fa98fe/CMzrdYiaWJ.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 150px; height: 150px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <dotlottie-player
+                      src="https://lottie.host/2b03db7d-c6ea-42d1-9728-4245f17fa080/Qb9cYE4PAr.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 150px; height: 150px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                </div>
+                <h2 class="heading-secondary">Back-End</h2>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  MongoDB, PostgreSQL, NodeJS, Express, Python, C/C++
+                </p>
+                <div class="experience__visual-artbox">
+                  <div class="experience__visual-artbox__item">
+                    <dotlottie-player
+                      src="https://lottie.host/4ae6860b-8e2f-4899-a108-9613c26289b2/vjQGKyuIvG.json"
+                      background="transparent"
+                      speed="1"
+                      style="width: 150px; height: 150px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/technologies/postgresql.svg"
+                      alt="PostgreSQL Elephant image"
+                    />
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/technologies/mongodb.svg"
+                      alt="Mongo logo image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="u-hidden experience__visual-descriptionbox-item experience__visual-descriptionbox-education"
+              >
+                <h2 class="heading-secondary">
+                  BS in Electrical & Computer Engineering
+                </h2>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  University of Nevada Las Vegas
+                </p>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  2019 - 2023
+                </p>
+                <div class="experience__visual-artbox">
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/education/binary.svg"
+                      alt="Binary image"
+                    />
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/education/electrical.svg"
+                      alt="Electrical image"
+                    />
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/education/robotics.svg"
+                      alt="Robotics"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="u-hidden experience__visual-descriptionbox-item experience__visual-descriptionbox-languages"
+              >
+                <h2 class="heading-secondary">Fluent:</h2>
+                <p
+                  class="experience__visual-descriptionbox-description paragraph-primary"
+                >
+                  English, Filipino, Spanish
+                </p>
+                <div class="experience__visual-artbox">
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/languages/usa_flag.svg"
+                      alt="Usa image"
+                    />
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/languages/ph_flag.svg"
+                      alt="Philippines image"
+                    />
+                  </div>
+                  <div class="experience__visual-artbox__item">
+                    <img
+                      src="./assets/svg/languages/spain_flag.svg"
+                      alt="Spain image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <button class="btn experience__visual-button u-bottom-shadow-box">
+              Expand
+            </button> -->
+          </div>
+        </div>
+      </section>
+      <section class="section-projects"></section>
+      <section class="section-interests"></section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__description">
+        <span class="footer-date"></span>&nbsp;Copyright by
+        <span>&nbsp;Joshmar Morales.</span>&nbsp;Used for portfolio showcasing
+        only.
+      </p>
     </footer>
   </body>
 </html>

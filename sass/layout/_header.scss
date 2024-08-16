@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: $color-background-light-1;
+
+  &__logo-box {
+    @include flex-centering;
+    flex: 1;
+    padding: 5rem;
+  }
+
+  &__text-box {
+    @include flex-centering;
+    flex: 1;
+    padding: 5rem;
+  }
+
+  &__clock-box {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    animation: moveInBottom 1s ease-in;
+  }
+
+  &__logo {
+    @include flex-centering;
+    height: 70rem;
+    width: 70rem;
+    overflow: hidden;
+    animation: moveInLeft 1s ease-in;
+
+    &-photo {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      filter: brightness(0.9);
+    }
+  }
+}
