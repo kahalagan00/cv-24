@@ -100,6 +100,13 @@
             </div>
             <div class="experience__visual-descriptionbox">
               <div
+                class="u-hidden experience__visual-descriptionbox-item experience__visual-descriptionbox-default"
+              >
+                <h2 class="heading-secondary">
+                  Please hover the experiences for more information.
+                </h2>
+              </div>
+              <div
                 class="u-hidden experience__visual-descriptionbox-item experience__visual-descriptionbox-work"
               >
                 <h2 class="heading-secondary">
@@ -229,16 +236,16 @@
                     ></dotlottie-player>
                   </div>
                   <div class="experience__visual-artbox__item">
-                    <img
-                      src="./assets/svg/technologies/postgresql.svg"
-                      alt="PostgreSQL Elephant image"
-                    />
+                    <object
+                      type="image/svg+xml"
+                      data="./assets/svg/technologies/postgresql-anim.svg"
+                    ></object>
                   </div>
                   <div class="experience__visual-artbox__item">
-                    <img
-                      src="./assets/svg/technologies/mongodb.svg"
-                      alt="Mongo logo image"
-                    />
+                    <object
+                      type="image/svg+xml"
+                      data="./assets/svg/technologies/mongodb-anim.svg"
+                    ></object>
                   </div>
                 </div>
               </div>
@@ -312,9 +319,11 @@
               </div>
             </div>
 
-            <!-- <button class="btn experience__visual-button u-bottom-shadow-box">
-              Expand
-            </button> -->
+            <button
+              class="btn btn--dark experience__visual-button u-bottom-shadow-box"
+            >
+              Show details
+            </button>
           </div>
         </div>
       </section>

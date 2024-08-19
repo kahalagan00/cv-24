@@ -7,8 +7,21 @@
 }
 
 html {
+  // Browser default font size = 16px
   /* Calculated based on the browser's font, to define 1rem */
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem == 10px
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 56.25% of 16px == 9px, --> 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 50% of 16px == 8px, --> 1rem = 8px
+  }
+
+  @include respond(big-desk) {
+    font-size: 75%; // 75% of 16px == 12px, --> 1rem = 12px
+  }
 }
 
 body {

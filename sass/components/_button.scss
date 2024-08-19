@@ -6,4 +6,15 @@
   background-color: $color-dark-2;
   cursor: pointer;
   transition: transform 0.1s ease;
+
+  &--dark {
+    background-color: $color-dark-2;
+    &:hover {
+      transform: translateY(-10%);
+    }
+
+    &:active {
+      transform: translateY(-5%);
+    }
+  }
 }

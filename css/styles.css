@@ -1,3 +1,21 @@
+/*
+0 - 600px: Phone
+600px - 900px: Tablet portrait
+900px - 1200px: Tablet landscape
+1200px - 1800px: Laptop Regular Desktop
+1800px - + : Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desk
+
+
+CHANGES ORDER:
+Base + typography --> generaly layout --> components
+
+*/
 @keyframes moveInRight {
   0% {
     transform: translateX(50%);
@@ -46,6 +64,15 @@
 html {
   /* Calculated based on the browser's font, to define 1rem */
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -123,6 +150,12 @@ body {
   background-color: #222831;
   cursor: pointer;
   transition: transform 0.1s ease; }
+  .btn--dark {
+    background-color: #222831; }
+    .btn--dark:hover {
+      transform: translateY(-10%); }
+    .btn--dark:active {
+      transform: translateY(-5%); }
 
 .footer {
   height: 15rem;
@@ -135,7 +168,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80vh; }
+  height: 90vh; }
   .experience__list {
     flex: 1;
     display: flex;
@@ -174,7 +207,7 @@ body {
     overflow: hidden; }
     .experience__visual-photobox {
       position: absolute;
-      top: 10%;
+      top: 15%;
       left: 10%;
       display: flex;
       justify-content: center;
@@ -183,7 +216,7 @@ body {
       width: 80%;
       overflow: auto;
       z-index: 10;
-      transition: transform 1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       backface-visibility: hidden; }
       .experience__visual-photobox--expand {
         transform: rotateY(-180deg);
@@ -206,7 +239,7 @@ body {
       overflow: hidden;
       z-index: 9;
       transform: rotateY(180deg);
-      transition: transform 1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       backface-visibility: hidden;
       display: flex;
       flex-direction: column; }
@@ -236,15 +269,14 @@ body {
         .experience__visual-artbox__item img {
           max-height: 150px;
           width: 80%; }
+        .experience__visual-artbox__item object {
+          max-height: 150px;
+          width: 80%; }
     .experience__visual-button {
       position: absolute;
       bottom: 0;
-      left: 50%;
-      transform: translateX(-50%); }
-      .experience__visual-button:hover {
-        transform: translateX(-50%) translateY(-10%); }
-      .experience__visual-button:active {
-        transform: translateX(-50%) translateY(-5%); }
+      left: 40%;
+      z-index: 11; }
 
 .header {
   position: relative;

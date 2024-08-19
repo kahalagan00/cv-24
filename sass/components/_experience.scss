@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80vh;
+  height: 90vh;
 
   &__list {
     flex: 1;
@@ -55,14 +55,14 @@
 
     &-photobox {
       position: absolute;
-      top: 10%;
+      top: 15%;
       left: 10%;
       @include flex-centering;
       max-height: 100%;
       width: 80%;
       overflow: auto;
       z-index: 10;
-      transition: transform 1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       backface-visibility: hidden;
 
       &--expand {
@@ -90,7 +90,7 @@
       //   background-color: rgba(255, 0, 0, 0.507);
       z-index: 9;
       transform: rotateY(180deg);
-      transition: transform 1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       backface-visibility: hidden;
       display: flex;
       flex-direction: column;
@@ -127,22 +127,19 @@
           max-height: 150px;
           width: 80%;
         }
+
+        object {
+          max-height: 150px;
+          width: 80%;
+        }
       }
     }
 
     &-button {
       position: absolute;
       bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-
-      &:hover {
-        transform: translateX(-50%) translateY(-10%);
-      }
-
-      &:active {
-        transform: translateX(-50%) translateY(-5%);
-      }
+      left: 40%;
+      z-index: 11;
     }
   }
 }
