@@ -15,7 +15,7 @@ const expDescriptionBox = document.querySelector(
 const expDescriptions = document.querySelectorAll(".experience__description");
 const expandButton = document.querySelector(".experience__button");
 
-let specific_exp = `work`;
+let specific_exp = `default`;
 
 expandButton.addEventListener("click", function (e) {
   e.preventDefault();
@@ -46,7 +46,14 @@ experiences.forEach(function (exp) {
     expDescriptionBox.classList.remove(
       "experience__visual-descriptionbox--expand"
     );
-    specific_exp = exp.firstElementChild.textContent.toLowerCase();
+    specific_exp = exp.firstElementChild.textContent
+      .toLowerCase()
+      .split(" ")
+      .join("")
+      .split("\n")
+      .join("");
+    if (specific_exp === "experience") specific_exp = "default";
+    console.log(`<--${specific_exp}-->`);
     expImage.src = `/assets/svg/${specific_exp}.svg`;
   });
 });

@@ -187,7 +187,7 @@ body {
       padding: 1rem;
       text-align: center;
       transition: transform 0.5s;
-      cursor: pointer;
+      cursor: default;
       border-radius: 5px; }
       .experience__list-item:not(:last-child) {
         margin-bottom: 3rem; }
@@ -258,7 +258,6 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
-  height: 100vh;
   width: 100vw;
   background-color: #eeeeee;
   overflow: hidden; }
@@ -272,10 +271,6 @@ body {
     align-items: center;
     flex: 1;
     padding: 5rem; }
-    @media only screen and (max-width: 56.25em) {
-      .header__logo-box {
-        padding: 5rem;
-        height: 50%; } }
   .header__logo {
     position: relative;
     display: flex;
@@ -303,6 +298,8 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header__text-box {
         height: 50%; } }
+  .header__introduction-name {
+    margin-bottom: 1rem; }
   .header__clock-box {
     height: 20rem;
     width: 20rem;
