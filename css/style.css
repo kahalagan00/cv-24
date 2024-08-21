@@ -71,6 +71,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -98,7 +101,8 @@ body {
 
 .heading-secondary {
   color: inherit;
-  font-size: 3rem; }
+  font-size: 3rem;
+  text-align: center; }
 
 .header__description {
   color: inherit;
@@ -113,7 +117,8 @@ body {
   display: inline-block; }
 
 .paragraph-primary {
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-align: center; }
 
 .footer__description {
   color: #eeeeee;
@@ -172,38 +177,79 @@ body {
   height: 100vh;
   padding: 3rem;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .experience {
+      flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .experience__primary-item {
+      width: 100%; } }
+  @media (max-width: 600px) and (max-height: 600px) {
+    .experience__primary-item {
+      display: none; } }
+  @media only screen and (max-height: 650px), only screen and (max-width: 900px) {
+    .experience__title-technologies span {
+      display: none; }
+    .experience__title-technologies::after {
+      content: "Tech"; } }
+  @media only screen and (max-height: 650px), only screen and (max-width: 900px) {
+    .experience__title-education span {
+      display: none; }
+    .experience__title-education::after {
+      content: "Edu"; } }
+  @media only screen and (max-height: 650px), only screen and (max-width: 900px) {
+    .experience__title-languages span {
+      display: none; }
+    .experience__title-languages::after {
+      content: "Lang"; } }
   .experience__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem;
     height: 100%;
     overflow: hidden; }
-    .experience__list__primary {
-      margin-bottom: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .experience__list {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        flex: 0 0 30%; } }
+    @media only screen and (max-width: 37.5em) {
+      .experience__list {
+        justify-content: space-evenly; } }
     .experience__list-item {
       padding: 1rem;
       text-align: center;
       transition: transform 0.5s;
-      cursor: default;
+      cursor: pointer;
       border-radius: 5px; }
-      .experience__list-item:not(:last-child) {
-        margin-bottom: 3rem; }
-      .experience__list-item:hover {
+      @media only screen and (max-height: 650px) {
+        .experience__list-item {
+          margin: 0 1rem; } }
+      @media only screen and (min-width: 900px) {
+        .experience__list-item:not(:last-child) {
+          margin-bottom: 3rem; } }
+      .experience__list-item--active {
+        padding-bottom: 0;
+        border-bottom: 2px solid #222831;
+        border-radius: 0;
         transform: scale(1.2);
-        text-shadow: 0 1rem 2rem rgba(118, 171, 174, 0.5); }
-      .experience__list-item:active {
-        transform: translateY(1rem); }
+        text-shadow: 0 1rem 2rem rgba(118, 171, 174, 0.5);
+        transform: translateY(-1rem); }
   .experience__card {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     padding: 2rem;
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
     background-color: #ccc; }
+    @media only screen and (max-width: 56.25em) {
+      .experience__card {
+        height: 95%;
+        width: 95%; } }
   .experience__visual {
     position: relative;
     display: flex;
@@ -248,9 +294,41 @@ body {
       .experience__visual-descriptionbox--expand {
         transform: translate(-50%, -50%) rotateY(0deg); }
   .experience__description {
-    display: none; }
+    display: none;
+    box-sizing: border-box;
+    background-color: salmon;
+    height: 90%;
+    width: 90%;
+    overflow: hidden; }
     .experience__description--active {
-      display: block; }
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+    .experience__description-textbox {
+      overflow: hidden; }
+    .experience__description-artbox {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+    .experience__description-art {
+      height: 100%;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .experience__description-photo {
+      height: 100%;
+      width: 100%;
+      max-height: 100px;
+      max-width: 100px;
+      backface-visibility: hidden; }
+    .experience__description-lottie {
+      backface-visibility: hidden; }
+      .experience__description-lottie--hidden {
+        display: none; }
+  .experience__button-row {
+    padding: 1rem 0; }
 
 .header {
   position: relative;
@@ -258,6 +336,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
+  height: 100vh;
   width: 100vw;
   background-color: #eeeeee;
   overflow: hidden; }
@@ -270,7 +349,8 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 5rem; }
+    padding: 5rem;
+    z-index: 10; }
   .header__logo {
     position: relative;
     display: flex;
@@ -285,6 +365,7 @@ body {
         height: 100%;
         width: 100%; } }
     .header__logo-photo {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -301,27 +382,21 @@ body {
   .header__introduction-name {
     margin-bottom: 1rem; }
   .header__clock-box {
-    height: 20rem;
-    width: 20rem;
+    height: 25%;
+    width: 25%;
     position: absolute;
-    top: 0%;
-    left: 0%;
-    animation: moveInBottom 1s ease-in; }
-    @media only screen and (max-width: 75em) {
-      .header__clock-box {
-        width: 15%;
-        height: auto; } }
+    top: 25%;
+    left: 5%;
+    animation: moveInBottom 1s ease-in;
+    z-index: 20;
+    cursor: pointer; }
     @media only screen and (max-width: 56.25em) {
       .header__clock-box {
-        height: 20rem;
-        width: 20rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .header__clock-box {
-        width: 25%;
         height: auto; } }
   .header__clock-img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    cursor: pointer; }
 
 .section-experience {
   height: 100vh;

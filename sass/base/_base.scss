@@ -20,6 +20,10 @@ html {
     font-size: 50%; // 50% of 16px == 8px, --> 1rem = 8px
   }
 
+  @include respond(phone) {
+    font-size: 37.5%; // 1rem = 6px
+  }
+
   @include respond(big-desk) {
     font-size: 75%; // 75% of 16px == 12px, --> 1rem = 12px
   }

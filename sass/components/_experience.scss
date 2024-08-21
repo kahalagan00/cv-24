@@ -6,40 +6,101 @@
   padding: 3rem;
   overflow: hidden;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__primary-item {
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) and (max-height: 600px) {
+      display: none;
+    }
+  }
+
+  &__title-technologies {
+    @media only screen and (max-height: 650px),
+      only screen and (max-width: 900px) {
+      & span {
+        display: none;
+      }
+      &::after {
+        content: "Tech";
+      }
+    }
+  }
+
+  &__title-education {
+    @media only screen and (max-height: 650px),
+      only screen and (max-width: 900px) {
+      & span {
+        display: none;
+      }
+      &::after {
+        content: "Edu";
+      }
+    }
+  }
+
+  &__title-languages {
+    @media only screen and (max-height: 650px),
+      only screen and (max-width: 900px) {
+      & span {
+        display: none;
+      }
+      &::after {
+        content: "Lang";
+      }
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem;
     height: 100%;
     overflow: hidden;
 
-    &__primary {
-      margin-bottom: auto;
+    @include respond(tab-port) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+      flex: 0 0 30%;
+    }
+
+    @include respond(phone) {
+      justify-content: space-evenly;
     }
 
     &-item {
       padding: 1rem;
       text-align: center;
       transition: transform 0.5s;
-      cursor: default;
-
+      cursor: pointer;
       border-radius: 5px;
 
-      &:not(:last-child) {
-        margin-bottom: 3rem;
+      @media only screen and (max-height: 650px) {
+        margin: 0 1rem;
       }
 
-      &:hover {
-        // border: 1px solid $color-dark-2;
+      @media only screen and (min-width: 900px) {
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      &--active {
+        padding-bottom: 0;
+        border-bottom: 2px solid $color-dark-2;
+        border-radius: 0;
         transform: scale(1.2);
         text-shadow: 0 1rem 2rem rgba($color-accent-light-1, 0.5);
-      }
-
-      &:active {
-        transform: translateY(1rem);
+        transform: translateY(-1rem);
       }
     }
   }
@@ -49,9 +110,14 @@
     -moz-perspective: 150rem;
     position: relative;
     padding: 2rem;
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
     background-color: #ccc;
+
+    @include respond(tab-port) {
+      height: 95%;
+      width: 95%;
+    }
   }
 
   &__visual {
@@ -115,8 +181,73 @@
 
   &__description {
     display: none;
+    box-sizing: border-box;
+    background-color: salmon;
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+
     &--active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
+
+    &-textbox {
+      // @media (max-height: 900px) {
+      //   flex: 1 1 auto;
+      // }
+      overflow: hidden;
+    }
+
+    // // Add resp
+    // &-work {
+    //   p:last-child {
+    //     @media (max-width: 950px), (max-height: 800px) {
+    //       display: none;
+    //     }
+    //   }
+    //   p:nth-last-child(2) {
+    //     @media (max-width: 600px), (max-height: 600px) {
+    //       display: none;
+    //     }
+    //   }
+    // }
+
+    &-artbox {
+      // @media (max-height: 900px) {
+      //   flex: 0 0 20%;
+      // }
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    &-art {
+      height: 100%;
+      width: 25%;
+      @include flex-centering;
+    }
+
+    &-photo {
+      height: 100%;
+      width: 100%;
+      max-height: 100px;
+      max-width: 100px;
+      backface-visibility: hidden;
+    }
+
+    &-lottie {
+      backface-visibility: hidden;
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
+  &__button-row {
+    padding: 1rem 0;
   }
 }

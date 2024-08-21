@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <script
-      defer
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
     ></script>
@@ -34,17 +33,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__clock-box">
-        <dotlottie-player
-          src="https://lottie.host/03beccdc-741d-4f75-bae8-dd2acf36157c/sqaP09GLgR.json"
-          background="transparent"
-          speed="1"
-          style="width: 100%; height: 100%"
-          loop
-          autoplay
-          class="header__clock-img"
-        ></dotlottie-player>
-      </div>
       <div class="header__logo-box">
         <div class="header__logo">
           <img
@@ -52,6 +40,17 @@
             alt="Joshmar coding"
             class="header__logo-photo"
           />
+          <div class="header__clock-box">
+            <dotlottie-player
+              src="https://lottie.host/03beccdc-741d-4f75-bae8-dd2acf36157c/sqaP09GLgR.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 100%"
+              loop
+              autoplay
+              class="header__clock-img"
+            ></dotlottie-player>
+          </div>
         </div>
       </div>
       <div class="header__text-box">
@@ -69,24 +68,28 @@
       <section class="section-experience">
         <div class="experience">
           <div class="experience__list">
-            <div class="experience__list-item">
-              <h1
-                class="experience__primary heading-primary u-bottom-shadow-text"
-              >
-                Experience
-              </h1>
+            <div class="experience__list-item experience__primary-item">
+              <h1 class="heading-primary u-bottom-shadow-text">Experience</h1>
             </div>
             <div class="experience__list-item">
-              <h2 class="experience__title">Work</h2>
+              <h2 class="experience__title experience__title-work">
+                <span>Work</span>
+              </h2>
             </div>
             <div class="experience__list-item">
-              <h2 class="experience__title">Technologies</h2>
+              <h2 class="experience__title experience__title-technologies">
+                <span>Technologies</span>
+              </h2>
             </div>
             <div class="experience__list-item">
-              <h2 class="experience__title">Education</h2>
+              <h2 class="experience__title experience__title-education">
+                <span>Education</span>
+              </h2>
             </div>
             <div class="experience__list-item">
-              <h2 class="experience__title">Languages</h2>
+              <h2 class="experience__title experience__title-languages">
+                <span>Languages</span>
+              </h2>
             </div>
           </div>
           <div class="experience__visual">
@@ -109,28 +112,220 @@
                 <div
                   class="experience__description experience__description-work"
                 >
-                  <p class="paragraph-primary">Work description and details.</p>
+                  <div class="experience__description-textbox">
+                    <h1 class="heading-secondary experience_job-title">
+                      JCM Global: <em>Software Engineer</em>
+                    </h1>
+                    <p class="paragraph-primary">
+                      Developed real-time multi-threaded applications and BSP
+                      drivers for a network adapter device, facilitating
+                      communication between devices and a web server.
+                    </p>
+                    <p class="paragraph-primary">
+                      Built RESTful APIs to deliver field product data to the
+                      web application's back-end server.
+                    </p>
+                    <p class="paragraph-primary">
+                      Implemented features that improved networking capabilities
+                      by 10%.
+                    </p>
+                    <p class="paragraph-primary">
+                      Resolved critical bugs, reducing downtimes by 10% and
+                      significantly enhancing user experience during casino
+                      operations.
+                    </p>
+                    <p class="paragraph-primary">
+                      Thoroughly documented codebase changes, improving team
+                      productivity and onboarding efficiency.
+                    </p>
+                  </div>
+                  <div class="experience__description-artbox">
+                    <div class="experience__description-art">
+                      <dotlottie-player
+                        src="https://lottie.host/cbefd4d0-7deb-4264-b11e-02d0d89ace3c/gNIZMqiFej.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100px; height: 100px"
+                        loop
+                        autoplay
+                        class="experience__description-lottie"
+                      ></dotlottie-player>
+                    </div>
+                    <div class="experience__description-art">
+                      <dotlottie-player
+                        src="https://lottie.host/fcfd879e-0e87-4446-a430-70192bec0a1f/lZibhA5k2x.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100px; height: 100px"
+                        loop
+                        autoplay
+                        class="experience__description-lottie"
+                      ></dotlottie-player>
+                    </div>
+                    <div class="experience__description-art">
+                      <dotlottie-player
+                        src="https://lottie.host/c4438372-abcd-485f-a085-865560f9696b/R2766Yv9KW.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100px; height: 100px"
+                        loop
+                        autoplay
+                        class="experience__description-lottie"
+                      ></dotlottie-player>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="experience__description experience__description-technologies"
                 >
-                  <p class="paragraph-primary">
-                    Technologies description and details.
-                  </p>
+                  <div class="experience__description-textbox">
+                    <h1 class="heading-secondary">Front End</h1>
+                    <p class="paragraph-primary">
+                      React, Bootstrap, JavaScript, HTML, CSS
+                    </p>
+                  </div>
+                  <div class="experience__description-artbox">
+                    <div class="experience__description-art">
+                      <dotlottie-player
+                        src="https://lottie.host/e2f7147d-d617-44a5-8068-5eb6c4fa98fe/CMzrdYiaWJ.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100px; height: 100px"
+                        loop
+                        autoplay
+                        class="experience__description-lottie"
+                      ></dotlottie-player>
+                    </div>
+                    <div class="experience__description-art">
+                      <dotlottie-player
+                        src="https://lottie.host/2b03db7d-c6ea-42d1-9728-4245f17fa080/Qb9cYE4PAr.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100px; height: 100px"
+                        loop
+                        autoplay
+                        class="experience__description-lottie"
+                      ></dotlottie-player>
+                    </div>
+                  </div>
+                  <div class="experience__description-textbox">
+                    <h1 class="heading-secondary">Back End</h1>
+                    <p class="paragraph-primary">
+                      PostgreSQL, MongoDB, NodeJS, Express, Python
+                    </p>
+                  </div>
+                  <div class="experience__description-artbox">
+                    <div class="experience__description-art">
+                      <dotlottie-player
+                        src="https://lottie.host/4ae6860b-8e2f-4899-a108-9613c26289b2/vjQGKyuIvG.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100px; height: 100px"
+                        loop
+                        autoplay
+                        class="experience__description-lottie"
+                      ></dotlottie-player>
+                    </div>
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/technologies/mongodb-anim.svg"
+                        class="experience__description-photo experience__description-photo--4"
+                      >
+                        <img src="/assets/svg/technologies/mongodb-anim.svg" />
+                      </object>
+                    </div>
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/technologies/postgresql-anim.svg"
+                        class="experience__description-photo experience__description-photo--5"
+                      >
+                        <img
+                          src="/assets/svg/technologies/postgresql-anim.svg"
+                        />
+                      </object>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="experience__description experience__description-education"
                 >
-                  <p class="paragraph-primary">
-                    Education description and details.
-                  </p>
+                  <div class="experience__description-textbox">
+                    <h1 class="heading-secondary">
+                      BS in Computer Engineering
+                    </h1>
+                    <p class="paragraph-primary">
+                      University of Nevada, Las Vegas
+                    </p>
+                    <p class="paragraph-primary">2019 - 2023</p>
+                  </div>
+                  <div class="experience__description-artbox">
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/education/binary.svg"
+                        class="experience__description-photo"
+                      >
+                        <img src="/assets/svg/education/binary.svg" />
+                      </object>
+                    </div>
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/education/electrical.svg"
+                        class="experience__description-photo"
+                      >
+                        <img src="/assets/svg/education/electrical.svg" />
+                      </object>
+                    </div>
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/education/robotics.svg"
+                        class="experience__description-photo"
+                      >
+                        <img src="/assets/svg/education/robotics.svg" />
+                      </object>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="experience__description experience__description-languages"
                 >
-                  <p class="paragraph-primary">
-                    Languages description and details.
-                  </p>
+                  <div class="experience__description-textbox">
+                    <h1 class="heading-secondary">Fluent languages</h1>
+                    <p class="paragraph-primary">English, Spanish, Filipino</p>
+                  </div>
+                  <div class="experience__description-artbox">
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/languages/usa_flag.svg"
+                        class="experience__description-photo"
+                      >
+                        <img src="/assets/svg/languages/usa_flag.svg" />
+                      </object>
+                    </div>
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/languages/ph_flag.svg"
+                        class="experience__description-photo"
+                      >
+                        <img src="/assets/svg/languages/ph_flag.svg" />
+                      </object>
+                    </div>
+                    <div class="experience__description-art">
+                      <object
+                        type="image/svg+xml"
+                        data="/assets/svg/languages/spain_flag.svg"
+                        class="experience__description-photo"
+                      >
+                        <img src="/assets/svg/languages/spain_flag.svg" />
+                      </object>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
