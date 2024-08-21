@@ -6,67 +6,47 @@ const date = new Date();
 footerDate.textContent = `© ${date.getFullYear()}`;
 
 // EXPERIENCE FUNCTIONALITY
-const experiences = document.querySelectorAll(".experience__title");
-
-const experiencePhotoBox = document.querySelector(
-  ".experience__visual-photobox"
-);
-const experienceImage = document.getElementById("experienceImgEl");
-
-const experienceDescriptionBox = document.querySelector(
+const experiences = document.querySelectorAll(".experience__list-item");
+const expPhotoBox = document.querySelector(".experience__visual-photobox");
+const expImage = document.querySelector(".experience__photo");
+const expDescriptionBox = document.querySelector(
   ".experience__visual-descriptionbox"
 );
-const experienceItems = document.querySelectorAll(
-  ".experience__visual-descriptionbox-item"
-);
-const experienceDescription = document.querySelector(
-  ".experience__visual-descriptionbox-description"
-);
+const expDescriptions = document.querySelectorAll(".experience__description");
+const expandButton = document.querySelector(".experience__button");
 
-const expandButton = document.querySelector(".experience__visual-button");
-const photoBoxExpand = "experience__visual-photobox--expand";
-const descriptionBoxExpand = "experience__visual-descriptionbox--expand";
-let currentExperience = "default";
-
-experiences.forEach(function (experience) {
-  experience.addEventListener("mouseover", function (e) {
-    e.preventDefault();
-    expandButton.textContent = `Open details`;
-    flipCard(0);
-    experienceImage.src = `./assets/svg/${experience.textContent.toLowerCase()}.svg`;
-    currentExperience = experience.textContent.toLowerCase();
-    // Hide all experiences again
-    experienceItems.forEach((item) => item.classList.add("u-hidden"));
-  });
-});
-
-function flipCard(page) {
-  if (page === 0) {
-    experiencePhotoBox.classList.remove(photoBoxExpand);
-    experienceDescriptionBox.classList.remove(descriptionBoxExpand);
-  } else if (page === 1) {
-    // Only show text for recently hovered experience
-    document
-      .querySelector(`.experience__visual-descriptionbox-${currentExperience}`)
-      .classList.remove("u-hidden");
-    experiencePhotoBox.classList.add(photoBoxExpand);
-    experienceDescriptionBox.classList.add(descriptionBoxExpand);
-  }
-}
+let specific_exp = `work`;
 
 expandButton.addEventListener("click", function (e) {
   e.preventDefault();
-  const state = expandButton.textContent.split(" ")[0].toLowerCase();
-  if (state === "close") {
-    flipCard(0);
-    expandButton.textContent = `Open details`;
-    setTimeout(function () {
-      // Hide all experiences again
-      experienceItems.forEach((item) => item.classList.add("u-hidden"));
-    }, 300);
-    return;
-  }
+  console.log(`Button clicked!`);
 
-  flipCard(1);
-  expandButton.textContent = `Close details`;
+  if (expandButton.textContent[0] === "O") {
+    expandButton.textContent = "Close details";
+  } else expandButton.textContent = "Open details";
+
+  expPhotoBox.classList.toggle("experience__visual-photobox--expand");
+  expDescriptionBox.classList.toggle(
+    "experience__visual-descriptionbox--expand"
+  );
+
+  expDescriptions.forEach((description) =>
+    description.classList.remove("experience__description--active")
+  );
+
+  document
+    .querySelector(`.experience__description-${specific_exp}`)
+    .classList.add("experience__description--active");
+});
+
+experiences.forEach(function (exp) {
+  exp.addEventListener("mouseover", function (e) {
+    e.preventDefault();
+    expPhotoBox.classList.remove("experience__visual-photobox--expand");
+    expDescriptionBox.classList.remove(
+      "experience__visual-descriptionbox--expand"
+    );
+    specific_exp = exp.firstElementChild.textContent.toLowerCase();
+    expImage.src = `/assets/svg/${specific_exp}.svg`;
+  });
 });
