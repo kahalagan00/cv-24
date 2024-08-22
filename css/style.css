@@ -244,8 +244,7 @@ body {
     position: relative;
     padding: 2rem;
     height: 85%;
-    width: 85%;
-    background-color: #ccc; }
+    width: 85%; }
     @media only screen and (max-width: 56.25em) {
       .experience__card {
         height: 95%;
@@ -263,7 +262,6 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotateY(0deg);
-      background-color: blue;
       height: 80%;
       width: 80%;
       backface-visibility: hidden;
@@ -283,7 +281,6 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotateY(180deg);
-      background-color: yellow;
       height: 80%;
       width: 80%;
       backface-visibility: hidden;
@@ -296,7 +293,6 @@ body {
   .experience__description {
     display: none;
     box-sizing: border-box;
-    background-color: salmon;
     height: 90%;
     width: 90%;
     overflow: hidden; }

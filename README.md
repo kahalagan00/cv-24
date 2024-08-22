@@ -1,16 +1,12 @@
 # CV24
 
-My Personal Portfolio for the Year 2024
+My Personal Portfolio for the Year 2025
 
 Will be updated weekly 📅
 
-All images used are my own and taken with my own camera 📸
+All images and SVGs are from open-source resources.
 
 ### Main Projects Showcased
 
 - EgoLift University
-- Memwork
 - My Age
-- Bluelock
-- Blackjack
-- Distance Radar

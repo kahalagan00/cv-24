@@ -112,7 +112,7 @@
     padding: 2rem;
     height: 85%;
     width: 85%;
-    background-color: #ccc;
+    // background-color: #ccc;
 
     @include respond(tab-port) {
       height: 95%;
@@ -134,7 +134,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotateY(0deg);
-      background-color: blue;
+      // background-color: blue;
       height: 80%;
       width: 80%;
       backface-visibility: hidden;
@@ -162,7 +162,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotateY(180deg);
-      background-color: yellow;
+      // background-color: yellow;
       height: 80%;
       width: 80%;
       backface-visibility: hidden;
@@ -182,7 +182,7 @@
   &__description {
     display: none;
     box-sizing: border-box;
-    background-color: salmon;
+    // background-color: salmon;
     height: 90%;
     width: 90%;
     overflow: hidden;

@@ -25,16 +25,13 @@ expandButton.addEventListener("click", function (e) {
 
   if (expandButton.textContent[0] === "O") {
     expandButton.textContent = "Close details";
-
-    setTimeout(() => {
-      document
-        .querySelector(`.experience__description-${specific_exp}`)
-        .classList.add("experience__description--active");
-      expLotties.forEach((lottie) =>
-        lottie.classList.remove("experience__description-lottie-hidden")
-      );
-    }, 200);
-  } else {
+    document
+      .querySelector(`.experience__description-${specific_exp}`)
+      .classList.add("experience__description--active");
+    expLotties.forEach((lottie) =>
+      lottie.classList.remove("experience__description-lottie-hidden")
+    );
+  } else if (expandButton.textContent[0] === "C") {
     setTimeout(() => {
       expLotties.forEach((lottie) =>
         lottie.classList.add("experience__description-lottie-hidden")
@@ -42,8 +39,7 @@ expandButton.addEventListener("click", function (e) {
       expDescriptions.forEach((description) =>
         description.classList.remove("experience__description--active")
       );
-    }, 200);
-
+    }, 500);
     expandButton.textContent = "Open details";
   }
 
@@ -56,11 +52,24 @@ expandButton.addEventListener("click", function (e) {
 experiences.forEach(function (exp) {
   exp.addEventListener("click", function (e) {
     e.preventDefault();
+
+    setTimeout(() => {
+      // Visibility of card back side. Description box
+      expDescriptions.forEach((description) =>
+        description.classList.remove("experience__description--active")
+      );
+
+      // Visibility of the animataed SVG lotties.
+      expLotties.forEach((lottie) =>
+        lottie.classList.remove("experience__description-lottie-hidden")
+      );
+    }, 500);
+
+    // Experience list underlining and scale
     experiences.forEach(function (exp2) {
-      if (exp2 !== exp) {
-        exp2.classList.remove("experience__list-item--active");
-      }
+      exp2.classList.remove("experience__list-item--active");
     });
+
     exp.classList.add("experience__list-item--active");
 
     expandButton.textContent = "Open details";
@@ -80,6 +89,6 @@ experiences.forEach(function (exp) {
 
     console.log(`<--${specific_exp}-->`);
 
-    expImage.src = `/assets/svg/${specific_exp}.svg`;
+    expImage.src = `./assets/svg/${specific_exp}.svg`;
   });
 });
