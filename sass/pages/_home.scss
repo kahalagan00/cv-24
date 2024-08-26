@@ -1,15 +1,10 @@
 .section-experience {
-  min-height: 100vh;
-  height: auto; // Increase height past viewport if content does not fit
-
-  // // DURING TIGHT LANDSCAPE MODES
-  // @media only screen and (max-height: 600px) {
-  //   height: auto;
-  // }
+  min-height: 100vh; // Makes the section take up the entire viewport by default
+  height: auto; // Height will resize depending on the amount of content
 }
 .section-projects {
-  min-height: 100vh;
-  height: auto;
+  min-height: 100vh; // Makes the section take up the entire viewport by default
+  height: auto; // Height will resize depending on the amount of content
   // background-color: lightblue;
   padding: 4rem;
   display: flex;
@@ -18,21 +13,12 @@
   align-items: center;
 }
 .section-interests {
-  min-height: 100vh;
-  height: auto;
+  min-height: 100vh; // Makes the section take up the entire viewport by default
+  height: auto; // Height will resize depending on the amount of content
   background-color: lightcoral;
-
-  // DURING TIGHT LANDSCAPE MODES
-  @media only screen and (max-height: 600px) {
-    height: auto;
-  }
 }
 .section-resources {
-  height: 100vh;
+  min-height: 100vh; // Makes the section take up the entire viewport by default
+  height: auto; // Height will resize depending on the amount of content
   background-color: lightyellow;
-
-  // DURING TIGHT LANDSCAPE MODES
-  @media only screen and (max-height: 600px) {
-    height: auto;
-  }
 }
