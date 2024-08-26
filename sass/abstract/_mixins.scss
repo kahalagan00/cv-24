@@ -1,9 +1,4 @@
-@mixin flex-centering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+// FIX ISSUES WHEN USING FLOATS
 @mixin clearfix {
   &::after {
     content: "";
@@ -12,7 +7,8 @@
   }
 }
 
-@mixin absCenter {
+// CENTER AN ELEMENT THAT'S IN AN ABSOLUTE POSITION
+@mixin absoluteCenter {
   position: absolute;
   top: 50%;
   left: 50%;
