@@ -1,0 +1,76 @@
+.project__card {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  background-color: $color-background-light-1;
+  border: 2px solid #31363f;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+
+  display: grid;
+  grid-template-rows: 200px repeat(2, min-content) 1fr;
+  row-gap: 1rem;
+  overflow: hidden;
+  position: relative;
+
+  &-photobox {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #31363f;
+    filter: brightness(1.2);
+  }
+
+  &-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-description {
+    font-size: 1.5rem;
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-weight: 600;
+  }
+
+  &-techbox {
+    align-self: end;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, min-content));
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+
+    img {
+      height: 25px;
+      width: 25px;
+      display: block;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &-tech {
+    font-size: 1.5rem;
+    padding: 0rem 0.75rem;
+    background-color: $color-accent-light-2;
+    border-radius: 16px;
+  }
+}

@@ -1,15 +1,38 @@
 .section-experience {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto; // Increase height past viewport if content does not fit
+
+  // // DURING TIGHT LANDSCAPE MODES
+  // @media only screen and (max-height: 600px) {
+  //   height: auto;
+  // }
 }
 .section-projects {
-  height: 100vh;
-  background-color: lightblue;
+  min-height: 100vh;
+  height: auto;
+  // background-color: lightblue;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .section-interests {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: lightcoral;
+
+  // DURING TIGHT LANDSCAPE MODES
+  @media only screen and (max-height: 600px) {
+    height: auto;
+  }
 }
 .section-resources {
   height: 100vh;
   background-color: lightyellow;
+
+  // DURING TIGHT LANDSCAPE MODES
+  @media only screen and (max-height: 600px) {
+    height: auto;
+  }
 }

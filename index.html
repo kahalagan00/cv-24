@@ -85,12 +85,14 @@
           <div class="experience__category-separator"></div>
           <h2 class="heading-2">Experience</h2>
           <div class="experience__titlebox">
-            <div class="experience__title experience__title--1">
+            <div
+              class="experience__title experience__title--1 experience__title--active"
+            >
               <p>Work</p>
               <img
                 src="./assets/svg/experience_list/businessman.svg"
                 alt="Business man image"
-                class="experience__icon experience__icon--active"
+                class="experience__icon"
               />
             </div>
             <div class="experience__title experience__title--2">
@@ -242,14 +244,197 @@
             </div>
           </div>
         </div>
+        <div
+          class="experience__description experience__description-edu u-hidden"
+        >
+          <h2 class="heading-2">BS in Electrical and Computer Engineering</h2>
+          <p class="paragraph-1">University of Nevada, Las Vegas</p>
+          <p class="paragraph-1">2019 - 2023</p>
+          <p class="paragraph-1">
+            Relevant Courses: Data Structures and Algorithms, Embedded Systems
+            Design, Advanced Computer Science, Digital Forensics, Communication
+            Networks, Digital Systems Architecture and Design
+          </p>
+          <div class="experience__art">
+            <div class="experience__artbox">
+              <object
+                type="image/svg+xml"
+                data="./assets/svg/education/binary.svg"
+              >
+                <img src="./assets/svg/education/binary.svg" />
+              </object>
+            </div>
+            <div class="experience__artbox">
+              <object
+                type="image/svg+xml"
+                data="./assets/svg/education/electrical.svg"
+              >
+                <img src="./assets/svg/education/electrical.svg" />
+              </object>
+            </div>
+            <div class="experience__artbox">
+              <object
+                type="image/svg+xml"
+                data="./assets/svg/education/robotics.svg"
+              >
+                <img src="./assets/svg/education/robotics.svg" />
+              </object>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="experience__description experience__description-lang u-hidden"
+        >
+          <h2 class="heading-2">Fluent</h2>
+          <p class="paragraph-1">English, Filipino/Tagalog</p>
+          <div class="experience__art">
+            <div class="experience__artbox">
+              <object
+                type="image/svg+xml"
+                data="./assets/svg/languages/usa_flag.svg"
+              >
+                <img src="./assets/svg/languages/usa_flag.svg" />
+              </object>
+            </div>
+            <div class="experience__artbox">
+              <object
+                type="image/svg+xml"
+                data="./assets/svg/languages/ph_flag.svg"
+              >
+                <img src="./assets/svg/languages/ph_flag.svg" />
+              </object>
+            </div>
+          </div>
+          <h2 class="heading-2">Proficient</h2>
+          <p class="paragraph-1">Spanish/Español</p>
+          <div class="experience__art">
+            <div class="experience__artbox">
+              <object
+                type="image/svg+xml"
+                data="./assets/svg/languages/spain_flag.svg"
+              >
+                <img src="./assets/svg/languages/spain_flag.svg" />
+              </object>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section-projects">
-        <div class="project__card">EgoLift University</div>
-        <div class="project__card">My Age</div>
-        <div class="project__card">Bluelock</div>
+        <h2 class="heading-2 projects-title">Projects</h2>
+        <div class="projects">
+          <div class="project__card">
+            <div class="project__card-photobox">
+              <img
+                src="./assets/images/egoLiftOrig/1_compressed.jpg"
+                alt=""
+                class="project__card-photo"
+              />
+            </div>
+            <p class="project__card-title">EgoLift University</p>
+            <div class="project__card-description">
+              Information about EgoLift University...
+            </div>
+            <div class="project__card-techbox">
+              <div class="project__card-tech">React</div>
+              <div class="project__card-tech">MongoDB</div>
+              <div class="project__card-tech">SASS</div>
+              <a
+                href="https://github.com/kahalagan00/Bluelock-Drowning-Detector"
+                ><img
+                  src="./assets/svg/projects/github.svg"
+                  alt="Github Icon"
+                  class="project__card-icon"
+              /></a>
+              <a
+                href="https://github.com/kahalagan00/Bluelock-Drowning-Detector"
+                ><img
+                  src="./assets/svg/projects/pagelink.svg"
+                  alt="Website Link Icon"
+                  class="project__card-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card-photobox">
+              <img
+                src="./assets/images/myAgeOrig/0_edited_compressed.JPG"
+                alt=""
+                class="project__card-photo"
+              />
+            </div>
+            <p class="project__card-title">My Age</p>
+            <div class="project__card-description">
+              In this web-based game, players are tasked with accurately
+              guessing the age of a depicted individual within a specified
+              number of attempts.
+            </div>
+            <div class="project__card-techbox">
+              <div class="project__card-tech">HTML</div>
+              <div class="project__card-tech">JavaScript</div>
+              <div class="project__card-tech">CSS</div>
+              <a
+                href="https://github.com/kahalagan00/Bluelock-Drowning-Detector"
+                ><img
+                  src="./assets/svg/projects/github.svg"
+                  alt="Github Icon"
+                  class="project__card-icon"
+              /></a>
+              <a
+                href="https://github.com/kahalagan00/Bluelock-Drowning-Detector"
+                ><img
+                  src="./assets/svg/projects/pagelink.svg"
+                  alt="Website Link Icon"
+                  class="project__card-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card-photobox">
+              <img
+                src="./assets/images/bluelockOrig/1.png"
+                alt=""
+                class="project__card-photo"
+              />
+            </div>
+            <p class="project__card-title">Bluelock</p>
+            <div class="project__card-description">
+              Developed and deployed a machine learning model designed to detect
+              drowning movements in pools, utilizing Python with TensorFlow for
+              object detection and OpenCV for image classification and video
+              output. The model was optimized and installed on the NVIDIA Jetson
+              Nano, ensuring efficient performance for real-time action
+              recognition in the final product.
+            </div>
+            <div class="project__card-techbox">
+              <div class="project__card-tech">Python</div>
+              <div class="project__card-tech">Tensorflow</div>
+              <div class="project__card-tech">OpenCV</div>
+              <a
+                href="https://github.com/kahalagan00/Bluelock-Drowning-Detector"
+                ><img
+                  src="./assets/svg/projects/github.svg"
+                  alt="Github Icon"
+                  class="project__card-icon"
+              /></a>
+              <a
+                href="https://github.com/kahalagan00/Bluelock-Drowning-Detector"
+                ><img
+                  src="./assets/svg/projects/pagelink.svg"
+                  alt="Website Link Icon"
+                  class="project__card-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project__card">My Age</div>
+        <div class="project__card">Bluelock</div> -->
       </section>
+
       <section class="section-interests">
+        <h2 class="heading-2">Interests</h2>
         <div class="interest__card">Video Games</div>
         <div class="interest__card">Language Learning</div>
         <div class="interest__card">Eating</div>

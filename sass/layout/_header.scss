@@ -10,6 +10,12 @@
     grid-template-columns: 1fr;
   }
 
+  @media only screen and (max-height: 600px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+  }
+
   &__introduction {
     // background-color: slateblue;
     display: flex;
@@ -19,6 +25,10 @@
 
     @media (max-width: 900px) {
       align-items: flex-end;
+    }
+
+    @media only screen and (max-height: 600px) {
+      align-items: center;
     }
   }
 
@@ -47,6 +57,9 @@
 
     @media (max-width: 900px) {
       align-items: flex-start;
+    }
+    @media only screen and (max-height: 600px) {
+      align-items: center;
     }
   }
 
