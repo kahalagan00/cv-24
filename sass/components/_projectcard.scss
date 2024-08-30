@@ -43,7 +43,7 @@
   &-techbox {
     align-self: end;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(6rem, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     column-gap: 1.5rem;
     row-gap: 1.5rem;
     align-items: center;
@@ -69,8 +69,9 @@
 
   &-tech {
     font-size: 1.5rem;
-    padding: 0rem 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background-color: $color-accent-light-2;
-    border-radius: 16px;
+    border-radius: 1rem;
   }
 }

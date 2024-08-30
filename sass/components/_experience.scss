@@ -141,7 +141,11 @@
     // grid-template-rows: repeat(auto-fit, min-content);
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
-    justify-items: center;
+    justify-items: start;
+
+    @media only screen and (max-width: 600px) {
+      justify-items: center;
+    }
   }
 
   &__artbox {
