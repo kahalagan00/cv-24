@@ -71,9 +71,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 37.5%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -98,6 +95,11 @@ body {
 
 .heading-2 {
   font-size: 4rem;
+  color: #222831; }
+
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 600;
   color: #222831; }
 
 .paragraph-1 {
@@ -241,7 +243,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
-    justify-items: center; }
+    justify-items: start; }
+    @media only screen and (max-width: 600px) {
+      .experience__art {
+        justify-items: center; } }
   .experience__lottie {
     max-width: 200px;
     object-fit: cover; }
@@ -253,6 +258,45 @@ body {
     @media only screen and (max-width: 600px) {
       .experience__icon {
         height: 40px; } }
+
+.footer__first {
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+  .footer__first p {
+    color: #eeeeee;
+    text-align: center; }
+    .footer__first p a:link,
+    .footer__first p a:visited {
+      color: #eeeeee;
+      text-decoration: none; }
+    .footer__first p a:hover,
+    .footer__first p a:active {
+      text-decoration: underline; }
+
+.footer__second {
+  color: #eeeeee;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+  .footer__second p {
+    color: #eeeeee;
+    text-align: center; }
+    .footer__second p a:link,
+    .footer__second p a:visited {
+      color: #eeeeee;
+      text-decoration: none; }
+    .footer__second p a:hover,
+    .footer__second p a:active {
+      text-decoration: underline; }
+
+.footer__img {
+  max-height: 150px;
+  max-width: 150px; }
 
 .project__card {
   max-width: 500px;
@@ -289,7 +333,7 @@ body {
   .project__card-techbox {
     align-self: end;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(6rem, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     column-gap: 1.5rem;
     row-gap: 1.5rem;
     align-items: center;
@@ -307,13 +351,53 @@ body {
         transform: scale(1); }
   .project__card-tech {
     font-size: 1.5rem;
-    padding: 0rem 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background-color: #93d6d9;
-    border-radius: 16px; }
+    border-radius: 1rem; }
 
-.footer {
-  height: 15rem;
+.resource__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem;
+  border-radius: 16px;
+  border: 1px solid black;
   background-color: #31363f; }
+  @media only screen and (max-width: 600px) {
+    .resource__card {
+      grid-template-rows: min-content 300px;
+      grid-template-columns: 1fr; } }
+  .resource__card-textbox h3,
+  .resource__card-textbox p {
+    color: #eeeeee; }
+  .resource__card-textbox a {
+    text-decoration: none;
+    color: #76abae;
+    transition: transform 0.2s; }
+    .resource__card-textbox a:hover {
+      background-color: #93d6d9;
+      color: #31363f; }
+  @media only screen and (max-width: 600px) {
+    .resource__card-textbox {
+      margin-bottom: 3rem;
+      text-align: center; } }
+  .resource__card-artbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; }
+    @media only screen and (max-width: 600px) {
+      .resource__card-artbox {
+        padding: 0; } }
+  .resource__card-img {
+    width: 75%;
+    height: 75%; }
+    @media only screen and (max-width: 600px) {
+      .resource__card-img {
+        width: 60%;
+        height: 60%; } }
 
 .header {
   height: 100vh;
@@ -325,7 +409,7 @@ body {
       padding: 5rem;
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr; } }
-  @media only screen and (max-height: 600px) {
+  @media only screen and (max-height: 600px) and (min-width: 600px) {
     .header {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
@@ -338,7 +422,7 @@ body {
     @media (max-width: 900px) {
       .header__introduction {
         align-items: flex-end; } }
-    @media only screen and (max-height: 600px) {
+    @media only screen and (max-height: 600px) and (min-width: 600px) {
       .header__introduction {
         align-items: center; } }
   .header__introductionbox {
@@ -406,6 +490,17 @@ body {
 .projects-title {
   margin-bottom: 8rem;
   align-self: flex-start; }
+  @media only screen and (max-width: 600px) {
+    .projects-title {
+      align-self: center; } }
+
+.resources {
+  display: grid;
+  row-gap: 2rem;
+  width: 100%; }
+
+.resources-title {
+  margin-bottom: 8rem; }
 
 .section-experience {
   min-height: 100vh;
@@ -421,11 +516,24 @@ body {
   align-items: center; }
 
 .section-interests {
-  min-height: 100vh;
   height: auto;
-  background-color: lightcoral; }
+  padding: 4rem; }
 
 .section-resources {
   min-height: 100vh;
   height: auto;
-  background-color: lightyellow; }
+  padding: 4rem; }
+
+.footer {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  width: 100vw;
+  height: auto;
+  background-color: #31363f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; }
+  @media only screen and (max-width: 600px) {
+    .footer {
+      grid-template-rows: repeat(2, minmax(min-content, 15rem));
+      grid-template-columns: 1fr; } }
