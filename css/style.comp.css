@@ -479,6 +479,62 @@ body {
         grid-row: 1 / 1;
         grid-column: 1 / 1; } }
 
+.interests {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+  @media only screen and (max-width: 720px) {
+    .interests {
+      grid-template-rows: min-content 2fr;
+      grid-template-columns: 1fr; } }
+  .interests__menu {
+    padding: 3rem; }
+    .interests__menu h3 {
+      cursor: pointer;
+      transition: transform 0.2s; }
+      .interests__menu h3:hover {
+        transform: scale(1.05); }
+    @media only screen and (max-width: 720px) {
+      .interests__menu {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        .interests__menu h3 {
+          display: none; } }
+  .interests__menubox {
+    display: none; }
+    @media only screen and (max-width: 720px) {
+      .interests__menubox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s; }
+        .interests__menubox--active {
+          transform: scale(1.1);
+          border-bottom: 2px solid black; } }
+    .interests__menubox img {
+      height: 65%;
+      width: 65%; }
+  .interests__artbox {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; }
+  .interests__art {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; }
+    .interests__art img {
+      display: block;
+      border-radius: 1rem;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 1rem; }
+
 .projects {
   width: 100%;
   display: grid;
@@ -516,6 +572,7 @@ body {
   align-items: center; }
 
 .section-interests {
+  min-height: 100vh;
   height: auto;
   padding: 4rem; }
 

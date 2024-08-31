@@ -1,0 +1,80 @@
+.interests {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  @media only screen and (max-width: 720px) {
+    grid-template-rows: min-content 2fr;
+    grid-template-columns: 1fr;
+  }
+
+  &__menu {
+    // background-color: lightskyblue;
+    padding: 3rem;
+
+    h3 {
+      cursor: pointer;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    @media only screen and (max-width: 720px) {
+      h3 {
+        display: none;
+      }
+
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__menubox {
+    display: none;
+
+    @media only screen and (max-width: 720px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+
+      &--active {
+        transform: scale(1.1);
+        border-bottom: 2px solid black;
+      }
+    }
+
+    img {
+      height: 65%;
+      width: 65%;
+    }
+  }
+
+  &__artbox {
+    // background-color: lightsteelblue;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  &__art {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      display: block;
+      border-radius: 1rem;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+  }
+}

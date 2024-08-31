@@ -94,6 +94,8 @@ expTitles.forEach(function (title) {
 
 /////////////////////////////////////////////////////////////////////////
 // INTERESTS SECTION
+const menuSelectSvg = document.querySelectorAll(".interests__menubox");
+const menuSelectText = document.querySelectorAll(".interests__menutext");
 
 /////////////////////////////////////////////////////////////////////////
 // FOOTER SECTION

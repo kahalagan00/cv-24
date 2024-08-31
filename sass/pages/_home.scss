@@ -13,7 +13,7 @@
   align-items: center;
 }
 .section-interests {
-  // min-height: 100vh; // Makes the section take up the entire viewport by default
+  min-height: 100vh; // Makes the section take up the entire viewport by default
   height: auto; // Height will resize depending on the amount of content
   padding: 4rem;
   // background-color: lightcoral;
