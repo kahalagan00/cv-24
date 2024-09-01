@@ -139,31 +139,36 @@
     justify-self: stretch;
     display: grid;
     // grid-template-rows: repeat(auto-fit, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1rem;
-    justify-items: start;
-
-    @media only screen and (max-width: 600px) {
-      justify-items: center;
-    }
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 2rem;
+    justify-items: center;
   }
 
   &__artbox {
+    overflow: hidden;
+
+    object {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__lottie {
-    max-width: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
   &__icon {
     height: 50px;
-    width: 100%;
+    width: 50px;
     display: block;
     z-index: 20;
 
     @media only screen and (max-width: 600px) {
-      height: 40px;
+      height: 50px;
+      width: 50px;
     }
   }
 }

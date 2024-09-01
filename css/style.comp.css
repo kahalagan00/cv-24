@@ -241,23 +241,28 @@ body {
   .experience__art {
     justify-self: stretch;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1rem;
-    justify-items: start; }
-    @media only screen and (max-width: 600px) {
-      .experience__art {
-        justify-items: center; } }
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 2rem;
+    justify-items: center; }
+  .experience__artbox {
+    overflow: hidden; }
+    .experience__artbox object {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
   .experience__lottie {
-    max-width: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover; }
   .experience__icon {
     height: 50px;
-    width: 100%;
+    width: 50px;
     display: block;
     z-index: 20; }
     @media only screen and (max-width: 600px) {
       .experience__icon {
-        height: 40px; } }
+        height: 50px;
+        width: 50px; } }
 
 .footer__first {
   padding: 2rem;
@@ -400,7 +405,8 @@ body {
         height: 60%; } }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: grid;
   grid-template-columns: 2fr minmax(30rem, 1fr);
   padding: 10rem; }
