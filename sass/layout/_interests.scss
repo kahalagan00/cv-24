@@ -9,25 +9,35 @@
 
   &__menu {
     // background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     padding: 3rem;
-
-    h3 {
-      cursor: pointer;
-      transition: transform 0.2s;
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
 
     @media only screen and (max-width: 720px) {
       h3 {
         display: none;
       }
 
-      padding: 0;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+    }
+  }
+
+  &__menutext {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform padding-left 0.2s;
+    margin-bottom: 1rem;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    &--active {
+      border-left: 2px solid black;
+      padding-left: 1rem;
     }
   }
 
@@ -43,22 +53,49 @@
 
       &--active {
         transform: scale(1.1);
+        padding-bottom: 1rem;
         border-bottom: 2px solid black;
       }
     }
 
     img {
-      height: 65%;
-      width: 65%;
+      height: 50px;
+      width: 50px;
     }
   }
 
   &__artbox {
     // background-color: lightsteelblue;
+    overflow: hidden;
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+
+    button {
+      display: none;
+    }
+
+    @media only screen and (max-width: 720px) {
+      position: relative;
+      display: block;
+      height: 70vh;
+      z-index: 1000;
+
+      button {
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:first-child {
+          left: 0;
+        }
+
+        &:last-child {
+          right: 0;
+        }
+      }
+    }
   }
 
   &__art {
@@ -66,7 +103,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    // overflow: hidden;
+    transition: transform 1s;
 
     img {
       display: block;
@@ -75,6 +113,21 @@
       width: 100%;
       object-fit: cover;
       margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 720px) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 80%;
+      padding: 4rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }

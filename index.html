@@ -586,24 +586,42 @@
         <h2 class="heading-2">Interests</h2>
         <div class="interests">
           <div class="interests__menu">
-            <h3 class="heading-3 interests__menutext">Video Games</h3>
-            <h3 class="heading-3 interests__menutext">Resistance Training</h3>
-            <h3 class="heading-3 interests__menutext">Language learning</h3>
-            <div class="interests__menubox interests__menubox--active">
+            <h3
+              class="heading-3 interests__menutext interests__menutext--active"
+              data-name="Video Games"
+            >
+              Video Games
+            </h3>
+            <h3
+              class="heading-3 interests__menutext"
+              data-name="Resistance Training"
+            >
+              Resistance Training
+            </h3>
+            <h3
+              class="heading-3 interests__menutext"
+              data-name="Language learning"
+            >
+              Language learning
+            </h3>
+            <div
+              class="interests__menubox interests__menubox--active"
+              data-name="Video Games"
+            >
               <img
                 src="./assets/svg/interests/menu-icon__game.svg"
                 alt="Video game controller svg"
                 class="interests__menubox-img"
               />
             </div>
-            <div class="interests__menubox">
+            <div class="interests__menubox" data-name="Resistance Training">
               <img
                 src="./assets/svg/interests/menu-icon__resistance.svg"
                 alt="Bicep svg"
                 class="interests__menubox-img"
               />
             </div>
-            <div class="interests__menubox">
+            <div class="interests__menubox" data-name="Language learning">
               <img
                 src="./assets/svg/interests/menu-icon__languages.svg"
                 alt="Translator svg"
@@ -613,51 +631,90 @@
           </div>
 
           <div class="interests__artbox interests__artbox-games">
-            <div class="interests__art">
+            <div class="interests__art interests__art-games">
               <img
                 src="./assets/images/interests/video_games/residentevil_lowres.jpg"
                 alt="Resident evil artbox photo"
               />
               <p class="paragraph-1">Resident Evil</p>
             </div>
-            <div class="interests__art">
+            <div class="interests__art interests__art-games">
               <img
                 src="./assets/images/interests/video_games/cyberpunk_lowres.jpg"
                 alt="Cyberpunk artbox photo"
               />
               <p class="paragraph-1">Cyberpunk</p>
             </div>
-            <div class="interests__art">
+            <div class="interests__art interests__art-games">
               <img
                 src="./assets/images/interests/video_games/yakuza_lowres.jpg"
                 alt="Yakuza artbox photo"
               />
               <p class="paragraph-1">Yakuza</p>
             </div>
+
+            <button class="carousel-btn carousel-btn-game">LeftArr</button>
+            <button class="carousel-btn carousel-btn-game">RightArr</button>
           </div>
 
           <div class="interests__artbox interests__artbox-resistance u-hidden">
-            <div class="interests__art">
-              <img src="" alt="" />
+            <div class="interests__art interests__art-resistance">
+              <img
+                src="./assets/images/header/stockOrig/1_edit_compressed.JPG"
+                alt="Resident evil artbox photo"
+              />
+              <p class="paragraph-1">FATRELLA</p>
             </div>
-            <div class="interests__art">
-              <img src="" alt="" />
+            <div class="interests__art interests__art-resistance">
+              <img
+                src="./assets/images/interests/video_games/cyberpunk_lowres.jpg"
+                alt="Cyberpunk artbox photo"
+              />
+              <p class="paragraph-1">CYBERFAT</p>
             </div>
-            <div class="interests__art">
-              <img src="" alt="" />
+            <div class="interests__art interests__art-resistance">
+              <img
+                src="./assets/images/interests/video_games/yakuza_lowres.jpg"
+                alt="Yakuza artbox photo"
+              />
+              <p class="paragraph-1">YAKULT</p>
             </div>
+
+            <button class="carousel-btn carousel-btn-resistance">
+              LeftArr
+            </button>
+            <button class="carousel-btn carousel-btn-resistance">
+              RightArr
+            </button>
           </div>
 
           <div class="interests__artbox interests__artbox-languages u-hidden">
-            <div class="interests__art">
-              <img src="" alt="" />
+            <div class="interests__art interests__art-languages">
+              <img
+                src="./assets/images/interests/languageOrig/0_edit_compressed.JPG"
+                alt=""
+              />
+              <p class="paragraph-1">IDOMA 1</p>
             </div>
-            <div class="interests__art">
-              <img src="" alt="" />
+            <div class="interests__art interests__art-languages">
+              <img
+                src="./assets/images/interests/pcOrig/0_edit_compressed.JPG"
+                alt=""
+              />
+              <p class="paragraph-1">IDIOMA 2</p>
             </div>
-            <div class="interests__art">
-              <img src="" alt="" />
+            <div class="interests__art interests__art-languages">
+              <img
+                src="./assets/images/interests/musicOrig/0_edited_compressed.JPG"
+                alt=""
+              />
+              <p class="paragraph-1">IDIOMA 3</p>
             </div>
+
+            <button class="carousel-btn carousel-btn-languages">LeftArr</button>
+            <button class="carousel-btn carousel-btn-languages">
+              RightArr
+            </button>
           </div>
         </div>
       </section>
