@@ -65,8 +65,8 @@ expTitles.forEach(function (title) {
     const currentDescription = document.querySelector(
       `.experience__description-${EXP_MAP.get(selection)}`
     );
-    console.log(selection);
-    console.log(currentDescription);
+    // console.log(selection);
+    // console.log(currentDescription);
     hideAllDescription();
     currentDescription.classList.remove("u-hidden");
   });
@@ -143,7 +143,7 @@ const hideAllArtboxes = function () {
 };
 
 const grabArt = function (key) {
-  console.log("GRABBING THE ART");
+  // console.log("GRABBING THE ART");
   switch (INTERESTS_MAP.get(key)) {
     case "games":
       return interestArtsGames;
@@ -160,7 +160,7 @@ const changeArtbox = function (key) {
   const artbox = document.querySelector(
     `.interests__artbox-${INTERESTS_MAP.get(key)}`
   );
-  console.log(`Changing Artbox to ${key}`);
+  // console.log(`Changing Artbox to ${key}`);
   hideAllArtboxes();
   artbox.classList.remove(HIDE);
 };
