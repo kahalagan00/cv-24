@@ -145,6 +145,15 @@ body {
     .btn--dark:active {
       transform: translateY(-5%); }
 
+.carousel-btn {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #76abae; }
+
 .experience {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -493,20 +502,27 @@ body {
       grid-template-rows: min-content 2fr;
       grid-template-columns: 1fr; } }
   .interests__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     padding: 3rem; }
-    .interests__menu h3 {
-      cursor: pointer;
-      transition: transform 0.2s; }
-      .interests__menu h3:hover {
-        transform: scale(1.05); }
     @media only screen and (max-width: 720px) {
       .interests__menu {
-        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly; }
         .interests__menu h3 {
           display: none; } }
+  .interests__menutext {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform padding-left 0.2s;
+    margin-bottom: 1rem; }
+    .interests__menutext:hover {
+      transform: scale(1.01); }
+    .interests__menutext--active {
+      border-left: 2px solid black;
+      padding-left: 1rem; }
   .interests__menubox {
     display: none; }
     @media only screen and (max-width: 720px) {
@@ -518,21 +534,44 @@ body {
         transition: transform 0.2s; }
         .interests__menubox--active {
           transform: scale(1.1);
+          padding-bottom: 1rem;
           border-bottom: 2px solid black; } }
     .interests__menubox img {
-      height: 65%;
-      width: 65%; }
+      height: 50px;
+      width: 50px; }
   .interests__artbox {
+    position: relative;
+    overflow: hidden;
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem; }
+    .interests__artbox button {
+      display: none; }
+    @media only screen and (max-width: 720px) {
+      .interests__artbox {
+        position: relative;
+        display: block;
+        height: 70vh;
+        z-index: 1000; }
+        .interests__artbox button {
+          position: absolute;
+          display: block;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #76abae;
+          font-size: 3rem;
+          font-weight: 900; }
+          .interests__artbox button:first-child {
+            left: 0; }
+          .interests__artbox button:last-child {
+            right: 5%; } }
   .interests__art {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden; }
+    transition: transform 1s; }
     .interests__art img {
       display: block;
       border-radius: 1rem;
@@ -540,6 +579,18 @@ body {
       width: 100%;
       object-fit: cover;
       margin-bottom: 1rem; }
+    @media only screen and (max-width: 720px) {
+      .interests__art {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 80%;
+        padding: 4rem; }
+        .interests__art img {
+          height: 100%;
+          width: 100%; } }
 
 .projects {
   width: 100%;
