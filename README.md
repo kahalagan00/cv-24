@@ -2,7 +2,8 @@
 
 My Personal Portfolio for the Year 2025 and beyond
 
-Will be updated weekly 📅
+> [!NOTE]
+> Still in development and will be updated weekly.
 
 ### Main Projects Showcased
 
@@ -14,16 +15,17 @@ Will be updated weekly 📅
 ### Future features
 
 - Dark mode
-- Full Spanish page translation
-- Full Tagalog page translation
-- Full French page translation
-- Full Portuguese page translation
+- Multilingual Support
+  - Spanish
+  - Tagalog
+  - French
+  - Portuguese
 
 ### Resources
 
 All images and SVGs are from open-source resources.
 
-- [Unsplash](unsplash.com)
-- [Undraw](undraw.co)
-- [SVG Repo](svgrepo.com)
-- [Lottie Files](lottiefiles.com)
+- [Unsplash](https://unsplash.com)
+- [Undraw](https://undraw.co)
+- [SVG Repo](https://svgrepo.com)
+- [Lottie Files](https://lottiefiles.com)
