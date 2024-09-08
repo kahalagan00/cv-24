@@ -14,13 +14,14 @@ My Personal Portfolio for the Year 2025 and beyond
 
 ### One Problem Simple Projects
 
-- My Age
-- Weather App
+- <a href="https://joshmar-weather-app.netlify.app/">Weather App</a>
+- My Age App
 - To-Do-List App
 - Quiz App
 
 ### University Projects
 
+- Rader Distance Detector
 - Bluelock (Senior Design Capstone)
 
 ## Future features

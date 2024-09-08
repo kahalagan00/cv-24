@@ -22,32 +22,17 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./sass/main.scss" />
 
-    <script
+    <!-- <script
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
-    ></script>
+    ></script> -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest"></script>
 
-    <script defer src="./script.js"></script>
+    <script type="module" src="./script.js" defer></script>
   </head>
   <body class="container">
-    <!-- Code for the animated clock, uncomment to use -->
-    <!-- <dotlottie-player
-      src="https://lottie.host/03beccdc-741d-4f75-bae8-dd2acf36157c/sqaP09GLgR.json"
-      background="transparent"
-      speed="1"
-      style="width: 100%; height: 100%"
-      loop
-      autoplay
-      class="header__clock-img"
-    ></dotlottie-player> -->
-
-    <!-- Code for animated SVGs from SVG_Gator using objects -->
-    <!-- <object type="image/svg+xml" data="sample.svg">
-      <img src="sample.svg" />
-    </object> -->
-
     <header class="header">
       <div class="header__introduction">
         <div class="header__introductionbox">
@@ -327,7 +312,7 @@
           <div class="project__card">
             <div class="project__card-photobox">
               <img
-                src="./assets/images/projects/portolioOrig/Portfolio_screenshot-1.png"
+                src="./assets/images/projects/portfolioOrig/Portfolio_screenshot-1.png"
                 alt="Portfolio Website screenshot 1"
                 class="project__card-photo"
               />
@@ -357,7 +342,43 @@
           <div class="project__card">
             <div class="project__card-photobox">
               <img
-                src="./assets/images/projects/egoLiftOrig/1_compressed.jpg"
+                src="./assets/images/projects/weatherOrig/application_screenshot-1.png"
+                alt="Weather application Photo 1"
+                class="project__card-photo"
+              />
+            </div>
+            <p class="project__card-title">Weather App</p>
+            <div class="project__card-description">
+              This is a weather application that outputs details about the
+              weather forecast of a specified city. The user will be able to
+              search for a city and the application will use public APIs to
+              extract information about said city. I built this project to get a
+              better grasp of JavaScript and the MVC architecture.
+            </div>
+            <div class="project__card-techbox">
+              <div class="project__card-tech">HTML</div>
+              <div class="project__card-tech">JavaScript</div>
+              <div class="project__card-tech">SASS</div>
+              <div class="project__card-tech">Parcel</div>
+              <div class="project__card-tech">MVC</div>
+              <a href="https://github.com/kahalagan00/weather-app"
+                ><img
+                  src="./assets/svg/projects/github.svg"
+                  alt="Github Icon"
+                  class="project__card-icon"
+              /></a>
+              <a href="https://joshmar-weather-app.netlify.app/"
+                ><img
+                  src="./assets/svg/projects/pagelink.svg"
+                  alt="Website Link Icon"
+                  class="project__card-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card-photobox">
+              <img
+                src="./assets/images/projects/egoLiftOrig/1_compressed.jpeg"
                 alt="Ego Lift Photo 1"
                 class="project__card-photo"
               />
@@ -387,7 +408,7 @@
           <div class="project__card">
             <div class="project__card-photobox">
               <img
-                src="./assets/images/projects/nutriStoreOrig/0_compressed.jpg"
+                src="./assets/images/projects/nutriStoreOrig/0_compressed.jpeg"
                 alt="Jhuv Nutri Store Photo 1"
                 class="project__card-photo"
               />
@@ -417,7 +438,7 @@
           <div class="project__card">
             <div class="project__card-photobox">
               <img
-                src="./assets/images/projects/myAgeOrig/0_edited_compressed.JPG"
+                src="./assets/images/projects/myAgeOrig/0_edited_compressed.jpeg"
                 alt="My Age Photo 1"
                 class="project__card-photo"
               />
@@ -663,21 +684,21 @@
           <div class="interests__artbox interests__artbox-games">
             <div class="interests__art interests__art-games">
               <img
-                src="./assets/images/interests/video_games/residentevil_lowres.jpg"
+                src="./assets/images/interests/video_games/residentevil_lowres.jpeg"
                 alt="Resident evil artbox photo"
               />
               <p class="paragraph-1">Resident Evil</p>
             </div>
             <div class="interests__art interests__art-games">
               <img
-                src="./assets/images/interests/video_games/cyberpunk_lowres.jpg"
+                src="./assets/images/interests/video_games/cyberpunk_lowres.jpeg"
                 alt="Cyberpunk artbox photo"
               />
               <p class="paragraph-1">Cyberpunk</p>
             </div>
             <div class="interests__art interests__art-games">
               <img
-                src="./assets/images/interests/video_games/yakuza_lowres.jpg"
+                src="./assets/images/interests/video_games/yakuza_lowres.jpeg"
                 alt="Yakuza artbox photo"
               />
               <p class="paragraph-1">Yakuza</p>
@@ -690,21 +711,21 @@
           <div class="interests__artbox interests__artbox-resistance u-hidden">
             <div class="interests__art interests__art-resistance">
               <img
-                src="./assets/images/interests/resistance_training/bodybuilding_lowres.jpg"
+                src="./assets/images/interests/resistance_training/bodybuilding_lowres.jpeg"
                 alt="Aesthetic bodybuilder photo"
               />
               <p class="paragraph-1">Bodybuilding</p>
             </div>
             <div class="interests__art interests__art-resistance">
               <img
-                src="./assets/images/interests/resistance_training/calisthenics_lowres.jpg"
+                src="./assets/images/interests/resistance_training/calisthenics_lowres.jpeg"
                 alt="Cyberpunk artbox photo"
               />
               <p class="paragraph-1">Calisthenics</p>
             </div>
             <div class="interests__art interests__art-resistance">
               <img
-                src="./assets/images/interests/resistance_training/powerlifting_lowres.jpg"
+                src="./assets/images/interests/resistance_training/powerlifting_lowres.jpeg"
                 alt="Yakuza artbox photo"
               />
               <p class="paragraph-1">Powerlifting</p>
@@ -717,21 +738,21 @@
           <div class="interests__artbox interests__artbox-languages u-hidden">
             <div class="interests__art interests__art-languages">
               <img
-                src="./assets/images/interests/language_learning/spain_lowres.jpg"
+                src="./assets/images/interests/language_learning/spain_lowres.jpeg"
                 alt="Valencia supermarket photo"
               />
               <p class="paragraph-1">Spanish</p>
             </div>
             <div class="interests__art interests__art-languages">
               <img
-                src="./assets/images/interests/language_learning/paris_lowres.jpg"
+                src="./assets/images/interests/language_learning/paris_lowres.jpeg"
                 alt="Paris Eiffel Tower photo"
               />
               <p class="paragraph-1">French</p>
             </div>
             <div class="interests__art interests__art-languages">
               <img
-                src="./assets/images/interests/language_learning/brazil_lowres.jpg"
+                src="./assets/images/interests/language_learning/brazil_lowres.jpeg"
                 alt="Rio De Janeiro cable car ride photo"
               />
               <p class="paragraph-1">Portuguese</p>
