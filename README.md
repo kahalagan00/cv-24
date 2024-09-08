@@ -5,14 +5,26 @@ My Personal Portfolio for the Year 2025 and beyond
 > [!NOTE]
 > Still in development and will be updated weekly.
 
-### Main Projects Showcased
+## Projects Showcased
+
+### Main Full Stack Projects
 
 - EgoLift University
 - Jhuv Nutri Store
-- My Age
-- Bluelock (University Senior Design)
 
-### Future features
+### One Problem Simple Projects
+
+- <a href="https://joshmar-weather-app.netlify.app/">Weather App</a>
+- My Age App
+- To-Do-List App
+- Quiz App
+
+### University Projects
+
+- Rader Distance Detector
+- Bluelock (Senior Design Capstone)
+
+## Future features
 
 - Dark mode
 - Multilingual Support
@@ -21,7 +33,7 @@ My Personal Portfolio for the Year 2025 and beyond
   - French
   - Portuguese
 
-### Resources
+## Resources
 
 All images and SVGs are from open-source resources.
 
