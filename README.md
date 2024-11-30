@@ -9,15 +9,13 @@ My Personal Portfolio for the Year 2025 and beyond
 
 ### Main Full Stack Projects
 
-- EgoLift University
 - Jhuv Nutri Store
+- EgoLift University
 
 ### One Problem Simple Projects
 
 - <a href="https://joshmar-weather-app.netlify.app/">Weather App</a>
 - My Age App
-- To-Do-List App
-- Quiz App
 
 ### University Projects
 
