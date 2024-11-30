@@ -1,17 +1,16 @@
 .projects {
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
-  justify-items: center;
+  overflow: hidden;
 }
 
 .projects-title {
-  margin-bottom: 8rem;
+  overflow: hidden;
+  margin-right: auto;
+  margin-bottom: 2rem;
   align-self: flex-start;
-
-  @media only screen and (max-width: 600px) {
-    align-self: center;
-  }
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
 }

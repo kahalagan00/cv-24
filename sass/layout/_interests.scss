@@ -1,6 +1,11 @@
 .interests {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  font-family: "Crimson Text", serif;
 
   @media only screen and (max-width: 720px) {
     grid-template-rows: min-content 2fr;
@@ -32,13 +37,10 @@
     transition: transform padding-left 0.2s;
     margin-bottom: 1rem;
 
-    &:hover {
-      transform: scale(1.01);
-    }
-
     &--active {
-      border-left: 2px solid black;
-      padding-left: 1rem;
+      transition: border-left 0.2s ease, padding-left 0.2s ease; /* Smooth animations */
+      border-left: 3px solid black;
+      padding-left: 2rem;
     }
   }
 
@@ -66,6 +68,7 @@
   }
 
   &__artbox {
+    height: 600px;
     // background-color: lightsteelblue;
     position: relative;
     overflow: hidden;
@@ -119,6 +122,7 @@
       width: 100%;
       object-fit: cover;
       margin-bottom: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     @media only screen and (max-width: 720px) {
@@ -136,4 +140,13 @@
       }
     }
   }
+}
+
+.interests-title {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
 }

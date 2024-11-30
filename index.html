@@ -28,6 +28,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- <script
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
@@ -39,9 +45,15 @@
   </head>
   <body class="container">
     <header class="header">
+      <nav class="header__nav">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#resources">Resources</a>
+        <a href="#interests">Interests</a>
+      </nav>
       <div class="header__introduction">
         <div class="header__introductionbox">
-          <h1 class="heading-1">Hello! I'm Joshmar 👋</h1>
+          <h1 class="heading-1">Hello! I am Joshmar 👋🏻</h1>
           <p class="paragraph-1">
             A <span>Full Stack Developer</span> with a passion for creating
             engaging <span>user experiences</span> and solving
@@ -67,10 +79,13 @@
           />
         </div>
       </div>
+
+      <div class="header__leftCircle"></div>
+      <div class="header__rightCircle"></div>
     </header>
 
     <main>
-      <section class="section-experience experience">
+      <section class="section-experience experience" id="experience">
         <div class="experience__category">
           <div class="experience__category-separator"></div>
           <h2 class="heading-2">Experience</h2>
@@ -112,7 +127,7 @@
           </div>
         </div>
         <div class="experience__description experience__description-work">
-          <h2 class="heading-2">JCM Global: <em>Software Engineer</em></h2>
+          <h3 class="heading-3">JCM Global: <em>Software Engineer</em></h3>
           <p class="paragraph-1">
             Developed real-time multi-threaded applications and BSP drivers for
             a network adapter device, facilitating communication between devices
@@ -173,7 +188,7 @@
         <div
           class="experience__description experience__description-tech u-hidden"
         >
-          <h2 class="heading-2">Front End</h2>
+          <h3 class="heading-3">Front End</h3>
           <p class="paragraph-1">
             React, Bootstrap, Tailwind, HTML5, CSS3, JavaScript
           </p>
@@ -207,7 +222,7 @@
               </object>
             </div>
           </div>
-          <h2 class="heading-2">Back End</h2>
+          <h3 class="heading-3">Back End</h3>
           <p class="paragraph-1">MongoDB, PostgreSQL, NodeJS, Express</p>
           <div class="experience__art">
             <div class="experience__artbox">
@@ -239,7 +254,7 @@
         <div
           class="experience__description experience__description-edu u-hidden"
         >
-          <h2 class="heading-2">BS in Electrical and Computer Engineering</h2>
+          <h3 class="heading-3">BS in Electrical and Computer Engineering</h3>
           <p class="paragraph-1">University of Nevada, Las Vegas</p>
           <p class="paragraph-1">2019 - 2023</p>
           <p class="paragraph-1">
@@ -278,7 +293,7 @@
         <div
           class="experience__description experience__description-lang u-hidden"
         >
-          <h2 class="heading-2">Fluent</h2>
+          <h3 class="heading-3">Fluent</h3>
           <p class="paragraph-1">English, Filipino/Tagalog</p>
           <div class="experience__art">
             <div class="experience__artbox">
@@ -298,7 +313,7 @@
               </object>
             </div>
           </div>
-          <h2 class="heading-2">Proficient</h2>
+          <h3 class="heading-3">Proficient</h3>
           <p class="paragraph-1">Spanish/Español</p>
           <div class="experience__art">
             <div class="experience__artbox">
@@ -313,7 +328,7 @@
         </div>
       </section>
 
-      <section class="section-projects">
+      <section class="section-projects" id="projects">
         <h2 class="heading-2 projects-title">Projects</h2>
         <div class="projects">
           <div class="project__card">
@@ -326,6 +341,9 @@
             </div>
             <p class="project__card-title">Jhuv Nutrition</p>
             <div class="project__card-description">
+              A full-stack e-commerce platform.
+            </div>
+            <!-- <div class="project__card-description">
               A full-stack e-commerce platform designed to offer high-quality
               nutrition supplements and wellness products. Built using the MERN
               stack with TypeScript across both the frontend and backend, the
@@ -334,7 +352,7 @@
               interface built with React and Tailwind, providing a smooth
               shopping experience while securely managing user data and orders
               with Node and MongoDB.
-            </div>
+            </div> -->
             <div class="project__card-techbox">
               <div class="project__card-tech">React</div>
               <div class="project__card-tech">TypeScript</div>
@@ -363,13 +381,14 @@
                 class="project__card-photo"
               />
             </div>
-            <p class="project__card-title">Professional Portfolio Version 1</p>
-            <div class="project__card-description">
+            <p class="project__card-title">Portfolio CV</p>
+            <!-- <div class="project__card-description">
               My personal portfolio highlights a range of projects,
               demonstrating my skills in web development and problem-solving. It
               features a clean, responsive design that effectively showcases my
               work and technical abilities.
-            </div>
+            </div> -->
+            <div class="project__card-description">My personal portfolio.</div>
             <div class="project__card-techbox">
               <div class="project__card-tech">JavaScript</div>
               <div class="project__card-tech">HTML</div>
@@ -398,12 +417,15 @@
             </div>
             <p class="project__card-title">Weather App</p>
             <div class="project__card-description">
+              Weather forecast application
+            </div>
+            <!-- <div class="project__card-description">
               This is a weather application that outputs details about the
               weather forecast of a specified city. The user will be able to
               search for a city and the application will use public APIs to
               extract information about said city. I built this project to get a
               better grasp of JavaScript and the MVC architecture.
-            </div>
+            </div> -->
             <div class="project__card-techbox">
               <div class="project__card-tech">HTML</div>
               <div class="project__card-tech">JavaScript</div>
@@ -434,11 +456,12 @@
               />
             </div>
             <p class="project__card-title">My Age</p>
-            <div class="project__card-description">
+            <div class="project__card-description">Age guessing game.</div>
+            <!-- <div class="project__card-description">
               In this web-based game, players are tasked with accurately
               guessing the age of a depicted individual within a specified
               number of attempts.
-            </div>
+            </div> -->
             <div class="project__card-techbox">
               <div class="project__card-tech">HTML</div>
               <div class="project__card-tech">JavaScript</div>
@@ -467,13 +490,16 @@
             </div>
             <p class="project__card-title">Bluelock</p>
             <div class="project__card-description">
+              Machine learning model for drowning.
+            </div>
+            <!-- <div class="project__card-description">
               Developed and deployed a machine learning model designed to detect
               drowning movements in pools, utilizing Python with TensorFlow for
               object detection and OpenCV for image classification and video
               output. The model was optimized and installed on the NVIDIA Jetson
               Nano, ensuring efficient performance for real-time action
               recognition in the final product.
-            </div>
+            </div> -->
             <div class="project__card-techbox">
               <div class="project__card-tech">Python</div>
               <div class="project__card-tech">Tensorflow</div>
@@ -530,7 +556,7 @@
         <div class="project__card">Bluelock</div> -->
       </section>
 
-      <section class="section-resources">
+      <section class="section-resources" id="resources">
         <h2 class="heading-2 resources-title">Resources</h2>
         <div class="resources">
           <div class="resource__card">
@@ -543,7 +569,7 @@
                 real-world projects, students will build the skills needed to
                 create dynamic web applications.
               </p>
-              <p class="paragraph-1">
+              <p class="paragraph-1 resources__link">
                 <a
                   href="https://www.udemy.com/course/the-complete-javascript-course/?srsltid=AfmBOor0FIyiXRq2J21chX0jRRmVynvkjJ49sdRcn8m-BbQZ2y9qDU4A&couponCode=BFCPSALE24"
                   >Link</a
@@ -570,7 +596,7 @@
                 students will develop the skills to design efficient algorithms
                 and solve complex computational problems.
               </p>
-              <p class="paragraph-1">
+              <p class="paragraph-1 resources__link">
                 <a href="https://www.youtube.com/@abdul_bari/videos">Link</a>
               </p>
             </div>
@@ -594,7 +620,7 @@
                 mastering concepts like props, context, and React Router for
                 seamless navigation.
               </p>
-              <p class="paragraph-1">
+              <p class="paragraph-1 resources__link">
                 <a
                   href="https://www.udemy.com/course/the-ultimate-react-course/?couponCode=BFCPSALE24"
                   >Link</a
@@ -621,7 +647,7 @@
                 optimize for performance, gaining the skills to build polished,
                 professional websites.
               </p>
-              <p class="paragraph-1">
+              <p class="paragraph-1 resources__link">
                 <a
                   href="https://www.udemy.com/course/advanced-css-and-sass/?couponCode=BFCPSALE24"
                   >Link</a
@@ -647,7 +673,7 @@
                 and deploying full-stack applications, mastering the use of
                 Node.js for server logic and MongoDB for data storage.
               </p>
-              <p class="paragraph-1">
+              <p class="paragraph-1 resources__link">
                 <a
                   href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/?couponCode=BFCPSALE24"
                   >Link</a
@@ -665,8 +691,8 @@
         </div>
       </section>
 
-      <section class="section-interests">
-        <h2 class="heading-2">Interests</h2>
+      <section class="section-interests" id="interests">
+        <h2 class="heading-2 interests-title">Interests</h2>
         <div class="interests">
           <div class="interests__menu">
             <h3
@@ -797,51 +823,53 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__first">
-        <div class="footer__first-copyright">
-          <p class="paragraph-1">
-            <span class="footer-date"></span>&nbsp;Copyright by
-            <span>&nbsp;Joshmar Morales.</span>&nbsp;Used for portfolio
-            showcasing only.
-          </p>
+    <div class="footer-extend">
+      <footer class="footer" id="footer">
+        <div class="footer__first">
+          <div class="footer__first-copyright">
+            <p class="paragraph-1">
+              <span class="footer-date"></span>&nbsp;Copyright by
+              <span>&nbsp;Joshmar Morales.</span>&nbsp;Used for portfolio
+              showcasing only.
+            </p>
+          </div>
+
+          <div class="footer__first-links">
+            <p class="paragraph-1">
+              <a
+                href="./assets/documents/Joshmar_Morales_Resume_2025.pdf"
+                download
+                >Résumé</a
+              >
+              | <a href="https://github.com/kahalagan00">GitHub</a> |
+              <a href="https://www.linkedin.com/in/joshmar-morales-4a354121b"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
         </div>
 
-        <div class="footer__first-links">
-          <p class="paragraph-1">
-            <a
-              href="./assets/documents/Joshmar_Morales_Resume_2025.pdf"
-              download
-              >Résumé</a
-            >
-            | <a href="https://github.com/kahalagan00">GitHub</a> |
-            <a href="https://www.linkedin.com/in/joshmar-morales-4a354121b"
-              >LinkedIn</a
-            >
-          </p>
+        <div class="footer__second">
+          <div class="footer__second-logo">
+            <img
+              src="./assets/svg/footer/footerLogo.svg"
+              alt="Footer logo"
+              class="footer__img"
+            />
+          </div>
+          <div class="footer__second-page">
+            <p class="paragraph-1">
+              <a href="javascript:void(0);">English</a> |
+              <a href="javascript:void(0);">Español</a> |
+              <a href="javascript:void(0);">Tagalog</a>
+            </p>
+            <p class="paragraph-1">
+              <a href="javascript:void(0);">Light Mode</a> |
+              <a href="javascript:void(0);">Dark Mode</a>
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="footer__second">
-        <div class="footer__second-logo">
-          <img
-            src="./assets/svg/footer/footerLogo.svg"
-            alt="Footer logo"
-            class="footer__img"
-          />
-        </div>
-        <div class="footer__second-page">
-          <p class="paragraph-1">
-            <a href="javascript:void(0);">English</a> |
-            <a href="javascript:void(0);">Español</a> |
-            <a href="javascript:void(0);">Tagalog</a>
-          </p>
-          <p class="paragraph-1">
-            <a href="javascript:void(0);">Light Mode</a> |
-            <a href="javascript:void(0);">Dark Mode</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
