@@ -310,6 +310,15 @@ languagesCarouselBtnRight.addEventListener("click", function (e) {
 });
 
 /////////////////////////////////////////////////////////////////////////
+// NAVBAR SECTION
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navMenu");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+/////////////////////////////////////////////////////////////////////////
 // FOOTER SECTION
 const footerDate = document.querySelector(".footer-date");
 const date = new Date();

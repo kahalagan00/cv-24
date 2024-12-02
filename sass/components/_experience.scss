@@ -27,9 +27,18 @@
     padding-top: 5rem;
 
     h2 {
-      margin: 3rem 0;
+      // margin: 3rem 0;
+      margin-right: auto;
+      padding-left: 4rem;
+      margin-bottom: 3rem;
       font-family: "Crimson Text", serif;
       font-weight: 600;
+
+      @media only screen and (max-width: 900px) {
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
 
     p {
