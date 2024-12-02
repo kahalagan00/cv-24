@@ -197,10 +197,13 @@
     width: 50px;
     display: block;
     z-index: 20;
+    background-color: #93d6d9;
+    padding: 10px;
+    border-radius: 9999px;
 
     @media only screen and (max-width: 600px) {
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
     }
   }
 }

@@ -1,18 +1,17 @@
 .footer__first {
-  // background-color: lightseagreen;
   padding: 2rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   p {
-    color: $color-background-light-1;
+    color: $color-dark-2;
     text-align: center;
 
     a:link,
     a:visited {
-      color: $color-background-light-1;
+      color: $color-dark-1;
       text-decoration: none;
     }
 
@@ -34,12 +33,12 @@
   align-items: center;
 
   p {
-    color: $color-background-light-1;
+    color: $color-dark-2;
     text-align: center;
 
     a:link,
     a:visited {
-      color: $color-background-light-1;
+      color: $color-dark-2;
       text-decoration: none;
     }
 
