@@ -164,6 +164,7 @@
   &__art {
     justify-self: stretch;
     display: grid;
+    height: 100px;
     // grid-template-rows: repeat(auto-fit, min-content);
     grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
     gap: 2rem;
@@ -181,8 +182,7 @@
     object {
       height: 100%;
       width: 100%;
-      max-width: 200px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
