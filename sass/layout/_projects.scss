@@ -13,4 +13,8 @@
   align-self: flex-start;
   font-family: "Crimson Text", serif;
   font-weight: 600;
+
+  @media only screen and (max-width: 900px) {
+    margin-left: auto;
+  }
 }
