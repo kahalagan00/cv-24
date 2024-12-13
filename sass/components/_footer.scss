@@ -27,9 +27,14 @@
   // background-color: lightcyan;
   padding: 2rem;
 
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
+  // Later when implemented Dark Mode, Languages, etc...
+  // display: grid;
+  // grid-template-rows: 1fr 1fr;
+  // justify-items: center;
+  // align-items: center;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
 
   p {
