@@ -119,8 +119,11 @@
     }
 
     &--active {
-      padding-bottom: 10px;
-      border-bottom: 2px solid $color-dark-2;
+      img {
+        padding-bottom: 10px;
+        border: 1px solid $color-dark-2;
+        transform: scale(1.1);
+      }
       transform: scale(1.1);
     }
   }
@@ -175,12 +178,13 @@
     display: grid;
     height: 100px;
     // grid-template-rows: repeat(auto-fit, min-content);
-    grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 7rem));
     gap: 2rem;
     justify-items: center;
 
     @media only screen and (max-width: 600px) {
-      grid-template-columns: repeat(auto-fill, minmax(50px, 50px));
+      grid-template-columns: repeat(auto-fill, minmax(6rem, 6rem));
+      height: 80px;
     }
   }
 

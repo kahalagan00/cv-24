@@ -83,7 +83,7 @@
     @media only screen and (max-width: 720px) {
       position: relative;
       display: block;
-      height: 70vh;
+      height: 75vh;
       z-index: 1000;
 
       button {
@@ -130,8 +130,8 @@
       left: 50%;
       transform: translateX(-50%);
       height: 100%;
-      width: 80%;
-      padding: 4rem;
+      width: 100%;
+      padding: 2rem 2rem 4rem 2rem;
 
       img {
         height: 100%;
