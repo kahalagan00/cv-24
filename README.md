@@ -33,10 +33,6 @@ This personal portfolio is a showcase of my skills, projects, and experience as 
 
 - Dark mode
 - Multilingual Support
-  - Spanish
-  - Tagalog
-  - French
-  - Portuguese
 
 ## Resources
 
